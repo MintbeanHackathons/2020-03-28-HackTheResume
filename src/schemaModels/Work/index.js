@@ -2,7 +2,7 @@ import Experience from "./Experience"
 
 class Work {
   constructor(work) {
-    this.work = work
+    this.values = work
   }
 
   static from(data) {

@@ -1,8 +1,8 @@
 .introductionContainer {
   display: flex;
   flex-direction: column;
-  margin: 50px;
   text-align: start;
+  width: 100%;
 }
 
 .introductionName {

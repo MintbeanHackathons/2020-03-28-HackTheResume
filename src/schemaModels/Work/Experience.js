@@ -9,6 +9,9 @@ class Experience {
     this.highlights = highlights
   }
 
+  employmentTime() {
+    return `${this.startDate} - ${this.endDate}`
+  }
 
   static from(data) {
     const { company, position, website, startDate, endDate, summary, highlights } = data

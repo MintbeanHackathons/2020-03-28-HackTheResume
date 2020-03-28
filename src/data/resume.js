@@ -6,7 +6,7 @@ const resumeJSON = JSON.stringify({
     "email": "john@gmail.com",
     "phone": "(912) 555-4321",
     "website": "http://johndoe.com",
-    "summary": "A summary of John Doe...",
+    "summary": "John hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -24,8 +24,8 @@ const resumeJSON = JSON.stringify({
     "company": "Company",
     "position": "President",
     "website": "http://company.com",
-    "startDate": "2013-01-01",
-    "endDate": "2014-01-01",
+    "startDate": "2013/01/01",
+    "endDate": "2014/01/01",
     "summary": "Description...",
     "highlights": [
       "Started the company"
@@ -35,8 +35,8 @@ const resumeJSON = JSON.stringify({
     "organization": "Organization",
     "position": "Volunteer",
     "website": "http://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
+    "startDate": "2012/01/01",
+    "endDate": "2013/01/01",
     "summary": "Description...",
     "highlights": [
       "Awarded 'Volunteer of the Month'"
@@ -46,8 +46,8 @@ const resumeJSON = JSON.stringify({
     "institution": "University",
     "area": "Software Development",
     "studyType": "Bachelor",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
+    "startDate": "2011/01/01",
+    "endDate": "2013/01/01",
     "gpa": "4.0",
     "courses": [
       "DB1101 - Basic SQL"
@@ -55,14 +55,14 @@ const resumeJSON = JSON.stringify({
   }],
   "awards": [{
     "title": "Award",
-    "date": "2014-11-01",
+    "date": "2014/11/01",
     "awarder": "Company",
     "summary": "There is no spoon."
   }],
   "publications": [{
     "name": "Publication",
     "publisher": "Company",
-    "releaseDate": "2014-10-01",
+    "releaseDate": "2014/10/01",
     "website": "http://publication.com",
     "summary": "Description..."
   }],

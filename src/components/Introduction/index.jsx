@@ -2,6 +2,9 @@ import React from "react"
 import Name from "./Name"
 import Label from "./Label"
 import IntroductionSubField from "./IntroductionSubField"
+import Divider from "../shared/Divider"
+import About from "./About"
+
 
 import "./styles.css"
 
@@ -46,9 +49,12 @@ const Introduction = ({ basics }) => {
     <div className="introductionContainer" >
       <Name name={basics.name} />
       <Label label={basics.label} />
+      <Divider />
       {
         renderIntroductionFields(introductionFields)
       }
+      <Divider />
+      <About content={basics.summary} />
     </div>
   )
 }
