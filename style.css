@@ -1,3 +1,16 @@
+header {
+  background: lightgreen;
+}
 h1 {
-  color: red;
+  color: darkgreen;
+}
+article,
+aside {
+  height: 200px;
+}
+article {
+  background-color: darkolivegreen;
+}
+aside {
+  background-color: blanchedalmond;
 }
