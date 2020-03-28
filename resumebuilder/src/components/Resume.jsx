@@ -2,15 +2,16 @@ import React from "react";
 import applicant from "../resume/applicant";
 import Basics from "./Basics";
 import WorkExperience from "./WorkExperience";
+import Volunteer from "./Volunteer";
 
 const Resume = props => {
 	let { applicant } = props;
 
 	return (
-		<>
 			<div>
 				<Basics applicant={applicant}></Basics>
         <WorkExperience applicant={applicant} />
+        <Volunteer applicant={applicant} />
 				{/* <ul></ul>
 					<li>{props.applicant.volunteer}</li>
 					<li>{props.applicant.education}</li>
@@ -21,7 +22,6 @@ const Resume = props => {
 					<li>{props.applicant.interests}</li>
 					<li>{props.applicant.references}</li> */}
 			</div>
-		</>
 	);
 };
 

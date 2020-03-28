@@ -8,7 +8,7 @@ const WorkExperience = (props) => {
 			return high;
 		});
 		return (
-			<p>
+			<div>
 				<h4>Company: {exp.company}</h4>
 				<p>Position: {exp.position}</p>
 				<p>Webiste: {exp.website}</p>
@@ -16,7 +16,7 @@ const WorkExperience = (props) => {
 				<p>EndDate: {exp.endDate}</p>
 				<p>Summary: {exp.summary}</p>
 				<p>Highlights: {highlights}</p>
-			</p>
+			</div>
 		);
   });
   
