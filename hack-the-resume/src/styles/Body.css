@@ -1,0 +1,19 @@
+.Body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1rem;
+  color: #282c34;
+  padding-left: 4rem;
+  padding-top: 2rem;
+}
+
+.Item {
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+}
+
+.Item h3 {
+  margin: 0;
+}
