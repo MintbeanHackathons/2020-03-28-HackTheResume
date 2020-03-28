@@ -1,12 +1,14 @@
 header {
-  background: lightgreen;
+  border-bottom: solid 5px rgb(15, 173, 15);
 }
-h1 {
-  color: darkgreen;
+ul > * {
+  display: inline;
+  padding-right: 5px;
 }
-article {
-  background-color: darkolivegreen;
+ul > :first-child {
+  font-weight: 900;
 }
-aside {
-  background-color: blanchedalmond;
+ul > :nth-child(3) {
+  font-style: italic;
+  display: block;
 }

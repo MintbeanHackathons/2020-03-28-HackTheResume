@@ -2,7 +2,7 @@ let my_resume = {
   basics: {
     name: "John Doe",
     label: "Programmer",
-    picture: "",
+    // picture: "",
     email: "john@gmail.com",
     phone: "(912) 555-4321",
     website: "http://johndoe.com",
@@ -109,33 +109,47 @@ delete my_resume.basics.label;
 let article = document.querySelector("article");
 let aside = document.querySelector("aside");
 
-["work", "volunteer", "education"].forEach(resumeKey => {
-  let header = document.createElement("h2");
-  header.innerText = resumeKey;
-  article.appendChild(header);
+let basicsList = document.createElement("ul");
 
+// iterate over basics and add to unordered list
+Object.keys(my_resume.basics).forEach(key => {
+  var resumeEntry = document.createElement("li");
+  resumeEntry.innerText = my_resume.basics[key];
+  basicsList.appendChild(resumeEntry);
+});
+
+let contactHeader = document.createElement("h2");
+contactHeader.innerText = "Contact";
+aside.appendChild(contactHeader);
+aside.appendChild(basicsList);
+
+delete my_resume["basics"];
+
+Object.keys(my_resume).forEach(resumeKey => {
   let list = document.createElement("ul");
+  list.classList.add(resumeKey);
 
   // loop through each section and add to unordered list
   my_resume[resumeKey].forEach((entryObject, index) => {
     Object.keys(entryObject).forEach(key => {
       var resumeEntry = document.createElement("li");
-      resumeEntry.innerText = `${key}: ${my_resume[resumeKey][index][key]}`;
+      resumeEntry.innerText = my_resume[resumeKey][index][key];
       list.appendChild(resumeEntry);
     });
   });
 
-  article.appendChild(list);
-  delete my_resume[resumeKey];
+  let header = document.createElement("h2");
+  header.innerText = resumeKey;
+
+  if (
+    ["work", "volunteer", "education", "awards", "publications"].includes(
+      resumeKey
+    )
+  ) {
+    article.appendChild(header);
+    article.appendChild(list);
+  } else {
+    aside.appendChild(header);
+    aside.appendChild(list);
+  }
 });
-
-let basicsList = document.createElement("ul");
-
-// iterate over entries and add to unordered list
-Object.keys(my_resume.basics).forEach(key => {
-  var resumeEntry = document.createElement("li");
-  resumeEntry.innerText = `${key}: ${my_resume.basics[key]}`;
-  basicsList.appendChild(resumeEntry);
-});
-
-aside.appendChild(basicsList);
