@@ -1,0 +1,14 @@
+{
+  "name": "resume",
+  "description": "Abuilding a resume from a json object",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Ahmed Yagoub",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.13.4"
+  }
+}
