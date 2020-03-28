@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container">
-      <form>
+      <form id="resumeForm">
         <legend>
           <h2 class="display-4">JSON Resume Builder</h2>
         </legend>
@@ -566,9 +566,26 @@
           </div>
         </div>
         <!-- Submit -->
-        <button type="submit" class="btn btn-primary">Create JSON</button>
+        <button type="submit" class="btn btn-primary mb-3">Create JSON</button>
       </form>
     </div>
+
+    <script>
+      document
+        .getElementById("resumeForm")
+        .addEventListener("submit", createForm);
+
+      function createForm(e) {
+        e.preventDefault();
+        var object = {};
+        formData = $("resumeFrom").serialize();
+        formData.forEach(function(value, key) {
+          object[key] = value;
+        });
+        var json = JSON.stringify(object);
+        console.log(json);
+      }
+    </script>
 
     <!-- Bootstrap JS -->
     <script
