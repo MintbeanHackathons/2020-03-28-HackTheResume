@@ -1,0 +1,103 @@
+{
+  "basics": {
+    "name": "James ROdgers",
+    "label": "Software Engineer",
+    "picture": "",
+    "email": "jamcrodgers@gmail.com",
+    "phone": "(303) 910-9582",
+    "website": "http://jamescrodgers.com",
+    "summary": "A cool headed problem solver.",
+    "location": {
+      "address": "508 S Roosevelt ave",
+      "postalCode": "CO 80026",
+      "city": "Lafayette",
+      "countryCode": "US",
+      "region": "CO"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "jamrod",
+        "url": "http://github/jamrod"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "General Assemb.ly",
+      "position": "Software Engineering Immersive Fellow",
+      "website": "http://generalassemb.ly",
+      "startDate": "2019-11",
+      "endDate": "2020-2",
+      "summary": "3 Month, full-time and full-stack program which provided experience with the latest front-end and back-end programming languages, tools and methodologies.",
+      "highlights": [
+        "Completed multiple projects showcasing these skills like Online-Herbal, Mixer-Assister,  Simon",
+        "Focus on Javascript, React, Express, MongoDB, Python, Django, HTML and CSS"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "",
+      "position": "",
+      "website": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [""]
+    }
+  ],
+  "education": [
+    {
+      "institution": "General Assemb.ly",
+      "area": "Software Engineering",
+      "studyType": "Certification",
+      "startDate": "2019-11",
+      "endDate": "2020-2",
+      "gpa": "",
+      "courses": ["Full Stack"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "website": "http://publication.com",
+      "summary": "Description..."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference..."
+    }
+  ]
+}
