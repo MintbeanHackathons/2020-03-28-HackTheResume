@@ -1,0 +1,29 @@
+.introductionContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  text-align: start;
+}
+
+.introductionName {
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.introductionLabel {
+  font-size: 35px;
+  color: grey;
+  padding-bottom: 20px;
+}
+
+.subFieldContainer {
+  display: flex;
+  padding: 5px;
+}
+
+.subFieldIcon {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}

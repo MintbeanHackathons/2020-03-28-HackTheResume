@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      <Introduction />
+      <Introduction basics={resume.basics} />
     </div>
   );
 }
