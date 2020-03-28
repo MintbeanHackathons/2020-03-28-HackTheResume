@@ -1,4 +1,4 @@
-export default resumeJSON = {
+const resumeJSON = {
   basics: {
     name: "John Doe",
     label: "Programmer",
@@ -98,3 +98,5 @@ export default resumeJSON = {
     }
   ]
 };
+
+export default resumeJSON;
