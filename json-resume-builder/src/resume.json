@@ -1,0 +1,170 @@
+{
+  "basics": {
+    "name": "Chris Arsenault",
+    "label": "Front End Developer",
+    "picture": "",
+    "email": "chrisstanarsenault@gmail.com",
+    "phone": "(647) 920-0506",
+    "website": "https://www.chrisarsenault.dev",
+    "summary": "A full stack developer from Toronto, Ontario, with a passion for all things front-end. I am extremely motivated and driven to grow my knowledge and skills in web development. With my many years working in the hospitality district, I have substantial experience of working as a team, as well as team building. I am excited to bring my eager attitude and past team experience into an innovative environment.",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "Toronto",
+      "countryCode": "CAN",
+      "region": "Ontario"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "mynameischrisa",
+        "url": "https://www.twitter.com/mynameischrisa"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "chrisstanarsenault",
+        "url": "https://www.linkedin.com/in/chrisstanarsenault"
+      },
+      {
+        "network": "GitHub",
+        "username": "chrisstanarsenault",
+        "url": "https://www.github.com/chrisstanarsenault"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "416 Media",
+      "position": "Wordpress Developer (freelance)",
+      "website": "",
+      "startDate": "Oct 2019",
+      "endDate": "Oct 2019",
+      "summary": "Description...",
+      "highlights": [
+        "data entry, migrating content from old client site to new updated site",
+        "created basic html tables to help organize some of the information",
+        "custom css work to fix with some of the formatting and aesthetic",
+        "connected GoogleMap API and billing to new account"
+      ]
+    },
+    {
+      "company": "World Legal Summit",
+      "position": "Wordpress Developer",
+      "website": "https://worldlegalsummit.org",
+      "startDate": "Mar 2019",
+      "endDate": "current",
+      "summary": "Description...",
+      "highlights": [
+        "general maintenance of the pre-existing website",
+        "customize layouts as per client's needs",
+        "plugin maintenance which increased speed and search optimization. Brought PageSpeed score from initial 35% to 74%",
+        "worked directly with each city host (approx 30-40) clients to add new updates and revisions to their individual event page (adding logos, documents, location details, speaker information, etc)",
+        "live streaming capabilities for each host location",
+        "set up Zendesk and created a custom theme for a knowledge base and community section",
+        "integrated a method to connect the Mailchimp account with separate GoogleSheets to collect signup information for each host, when interested parties requested an invite to their cities Summit."
+      ]
+    },
+    {
+      "company": "Toronto Lawn Tennis Club",
+      "position": "Membership Services Supervisor (Non Dev)",
+      "website": "",
+      "startDate": "June 2013",
+      "endDate": "Oct 2018",
+      "summary": "Description...",
+      "highlights": [
+        "booking tennis/squash courts for members",
+        "giving tours to new perspective members",
+        "answering all inquiries",
+        "being knowledgeable and up-to-date on all club related news and events",
+        "training all new front desk staff",
+        "set up Zendesk and created a custom theme for a knowledge base and community section",
+        "assisting with any requests from other departments"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "website": "http://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description...",
+      "highlights": ["Awarded 'Volunteer of the Month'"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Lighthouse Labs",
+      "area": "Fullstack Web Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "gpa": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Drawango",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "website": "https://www.github.com/chrisstanarsenault/drawango",
+      "summary": "A drawing/guessing party game built to learn to work further with React and Canvas in a realtime drawing environment."
+    },
+    {
+      "name": "Jungle App",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "website": "https://www.github.com/chrisstanarsenault/jungle-rails",
+      "summary": "An e-commerce Rails app built for learning Rails"
+    },
+    {
+      "name": "Chatty App",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "website": "https://www.github.com/chrisstanarsenault/chatty-app",
+      "summary": "Simple single page chat app built with React and Websockets"
+    },
+    {
+      "name": "Hookeai Poke",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "website": "https://www.github.com/chrisstanarsenault/hookeai-poke",
+      "summary": "A food ordering and pickup service for the fictitious restaurant 'Hookeai Pookeai'"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "Javascript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference..."
+    }
+  ]
+}
