@@ -6,21 +6,21 @@ let my_resume = {
     email: "john@gmail.com",
     phone: "(912) 555-4321",
     website: "http://johndoe.com",
-    summary: "A summary of John Doe...",
-    location: {
-      address: "2712 Broadway St",
-      postalCode: "CA 94115",
-      city: "San Francisco",
-      countryCode: "US",
-      region: "California"
-    },
-    profiles: [
-      {
-        network: "Twitter",
-        username: "john",
-        url: "http://twitter.com/john"
-      }
-    ]
+    summary: "A summary of John Doe..."
+    // location: {
+    //   address: "2712 Broadway St",
+    //   postalCode: "CA 94115",
+    //   city: "San Francisco",
+    //   countryCode: "US",
+    //   region: "California"
+    // },
+    // profiles: [
+    //   {
+    //     network: "Twitter",
+    //     username: "john",
+    //     url: "http://twitter.com/john"
+    //   }
+    // ]
   },
   work: [
     {
@@ -99,9 +99,43 @@ let my_resume = {
   ]
 };
 
-document.querySelector("h1").innerHTML = my_resume.basics.name;
+document.querySelector("header").innerHTML = `<h1>${my_resume.basics.name}</h1>
+    <h4>${my_resume.basics.label}</h4>`;
 
-// var node = document.createElement("LI"); // Create a <li> node
-// var textnode = document.createTextNode("Water"); // Create a text node
-// node.appendChild(textnode); // Append the text to <li>
-// document.getElementById("myList").appendChild(node); // Append <li> to <ul> with id="myList"
+// delete name and label to make iterating over basics easier
+delete my_resume.basics.name;
+delete my_resume.basics.label;
+
+let article = document.querySelector("article");
+let aside = document.querySelector("aside");
+
+["work", "volunteer", "education"].forEach(resumeKey => {
+  let header = document.createElement("h2");
+  header.innerText = resumeKey;
+  article.appendChild(header);
+
+  let list = document.createElement("ul");
+
+  // loop through each section and add to unordered list
+  my_resume[resumeKey].forEach((entryObject, index) => {
+    Object.keys(entryObject).forEach(key => {
+      var resumeEntry = document.createElement("li");
+      resumeEntry.innerText = `${key}: ${my_resume[resumeKey][index][key]}`;
+      list.appendChild(resumeEntry);
+    });
+  });
+
+  article.appendChild(list);
+  delete my_resume[resumeKey];
+});
+
+let basicsList = document.createElement("ul");
+
+// iterate over entries and add to unordered list
+Object.keys(my_resume.basics).forEach(key => {
+  var resumeEntry = document.createElement("li");
+  resumeEntry.innerText = `${key}: ${my_resume.basics[key]}`;
+  basicsList.appendChild(resumeEntry);
+});
+
+aside.appendChild(basicsList);

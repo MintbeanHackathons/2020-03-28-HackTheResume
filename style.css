@@ -4,10 +4,6 @@ header {
 h1 {
   color: darkgreen;
 }
-article,
-aside {
-  height: 200px;
-}
 article {
   background-color: darkolivegreen;
 }
