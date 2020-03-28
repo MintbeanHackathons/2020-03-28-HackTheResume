@@ -2,7 +2,7 @@
 
 ## Prize
 
-$25 Amazon gift card + bragging rights.
+$25 CAD Amazon gift card + bragging rights.
 
 Tip: Read [General Information.md]("./General Information.md") for more info on how to get started and submit.
 
