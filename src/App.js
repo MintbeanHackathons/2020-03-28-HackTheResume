@@ -12,11 +12,15 @@ function App() {
       {resume.work && <Experience data={resume.work} type='work' orgType='company' title='Work Experience' />}
       {resume.volunteer && <Experience data={resume.volunteer} type='volunteer' orgType='organization' title='Volunteer' />}
       {resume.education && <Experience data={resume.education} type='education' orgType='institution' title='Education' />}
-      {resume.awards && <Awards data={resume.awards} />}
-      {resume.publications && <Publications data={resume.publications} />}
+      <div className='app-row'>
+        {resume.awards && <Awards data={resume.awards} />}
+        {resume.publications && <Publications data={resume.publications} />}
+      </div>
       {resume.skills && <Skills data={resume.skills} />}
-      {resume.languages && <Languages data={resume.languages} />}
-      {resume.interests && <Interests data={resume.interests} />}
+      <div className='app-row'>
+        {resume.languages && <Languages data={resume.languages} />}
+        {resume.interests && <Interests data={resume.interests} />}
+      </div>
       {resume.references && <References data={resume.references} />}
     </div>
   );

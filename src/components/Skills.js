@@ -1,6 +1,8 @@
 import React from 'react';
 import generateKey from '@tammiec/generatekey';
 
+import './Skills.scss'
+
 const Skills = ({ data, ...props }) => {
 
   const skills = data.map(skill => {

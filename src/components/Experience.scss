@@ -12,11 +12,8 @@
 
   div {
     flex-basis: 50%;
-
-    h3 {
-      margin-top: 0.25em;
-    }
-  
+    min-width: 400px;
+    
     span {
       font-weight: 600;
     }

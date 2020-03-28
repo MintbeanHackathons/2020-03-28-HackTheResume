@@ -1,0 +1,16 @@
+#skills-container {
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+  h2 {
+    flex-basis: 100%;
+  }
+
+  div {
+    flex-basis: 50%;
+    min-width: 400px;
+
+  }
+}

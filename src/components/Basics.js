@@ -12,9 +12,9 @@ const Basics = ({ data, ...props }) => {
       <div className='basics-header'>
         <div>
           <h1>{data.name}</h1>
-          {data.picture && <img src={data.picture} alt='headshot' />}
+          <h3>{data.label}</h3>
         </div>
-        <h3>{data.label}</h3>
+        {data.picture && <img src={data.picture} alt='headshot' />}
       </div>
 
       <div>
