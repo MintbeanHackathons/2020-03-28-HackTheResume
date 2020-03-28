@@ -18,14 +18,13 @@ function App() {
     <Router>
     <div className="App">
     <header className="App-header">
-
+    </header>
     <Switch>
       <Route exact path="/">
         <DataEntry resume={resume} />
       </Route>
       <Route path="/resume" component={(props)=><Resume {...props} />}/>     
     </Switch>
-    </header>
     </div>
     </Router>
   );
