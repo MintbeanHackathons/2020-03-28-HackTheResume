@@ -1,0 +1,19 @@
+body {
+	font-family: 'Sen', sans-serif;
+}
+
+h1 {
+	font-family: 'Inria Sans', sans-serif;
+	font-weight: 700;
+	font-size: 4em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin: 0 auto;
+}
+
+h2 {
+	font-family: 'Inria Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}

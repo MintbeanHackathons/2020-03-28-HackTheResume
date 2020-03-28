@@ -1,0 +1,5 @@
+.Aside {
+	background-color: grey;
+	width: 500px;
+	grid-area: 'aside';
+}
