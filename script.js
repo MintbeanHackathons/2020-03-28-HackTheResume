@@ -113,7 +113,10 @@ let header = `
     <div class="wrapper">
         <h1>Hi! I'm <span>${name}</span></h1>
         <h2>I'm a ${profession}</h2>
-        <h3><a href="${website}">www.juliadufresne.com</a>  |  ${phone}  |  ${email}</h3>
+        <div class="contact">
+            <h3><a href="${website}">www.juliadufresne.com</a></h3>
+            <h3>${email}</h3>
+        </div>
     </div>
 `
 
