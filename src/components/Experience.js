@@ -1,11 +1,11 @@
 import React from 'react';
 import generateKey from '@tammiec/generatekey';
 
-const Work = ({ data, ...props }) => {
+const Experience = ({ data, type, title, ...props }) => {
 
-  const workExperience = data.map(work => (
+  const experience = data.map(work => (
     <div key={generateKey()}>
-      <h3>{work.company}</h3>
+      <h3>{type === 'work' ? work.company : work.organization}</h3>
       <h4>{work.position}</h4>
       <a href={work.website}>{work.website}</a>
       <p>{work.startDate} - {work.endDate}</p>
@@ -18,10 +18,10 @@ const Work = ({ data, ...props }) => {
 
   return (
     <div id='work-container'>
-      <h2>Work Experience</h2>
-      {workExperience}
+      <h2>{title}</h2>
+      {experience}
     </div>
   );
 };
 
-export default Work;
+export default Experience;
