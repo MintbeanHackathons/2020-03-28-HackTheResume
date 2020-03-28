@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CareerHack for Hackathon</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row" id="basics">
+          <div class="col-sm-4" id="picture"></div>
+          <div class="col-sm-8">
+            <div class="row">
+              <h1 class="display-4" id="Name"></h1>
+              <hr class="my-4" />
+            </div>
+            <div class="row">
+              <p class="lead" id="summary"></p>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="location/profiles">
+          <div class="col-sm-6" id="location"></div>
+          <div class="col-sm-6" id="profiles"></div>
+        </div>
+      </div>
+    </div>
+    <div class="tile is-ancestor" id="resume-data">
+      <div class="tile is-vertical">
+        <div class="tile">
+          <div class="tile is-vertical is-8 is-parent">
+            <article class="tile is-child notification is-primary" id="work">
+              <p class="title"><i class="fas fa-briefcase"></i>Work</p>
+            </article>
+            <article
+              class="tile is-child notification is-primary"
+              id="volunteering"
+            >
+              <p class="title">
+                <i class="fas fa-hands-helping"></i>Volunteering
+              </p>
+            </article>
+            <article
+              class="tile is-child notification is-primary"
+              id="education"
+            >
+              <p class="title">
+                <i class="fas fa-graduation-cap"></i>Education
+              </p>
+            </article>
+          </div>
+          <div class="tile is-vertical is-4 is-parent">
+            <article class="tile is-child notification is-danger" id="awards">
+              <p class="title">Awards</p>
+            </article>
+            <article
+              class="tile is-child notification is-danger"
+              id="publications"
+            >
+              <p class="title">Publications</p>
+            </article>
+            <article class="tile is-child notification is-danger" id="skills">
+              <p class="title">Skills</p>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent" id="footer-tile">
+          <article class="tile is-child notification is-warning" id="languages">
+            <p class="title">Languages</p>
+          </article>
+          <article class="tile is-child notification is-warning" id="interests">
+            <p class="title">Interests</p>
+          </article>
+          <article
+            class="tile is-child notification is-warning"
+            id="references"
+          >
+            <p class="title">References</p>
+          </article>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/Javascript files/resume.js"></script>
+    <script src="assets/Javascript files/script.js"></script>
+  </body>
+</html>
