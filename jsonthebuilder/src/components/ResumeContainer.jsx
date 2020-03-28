@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import sampleResume from "../assets/sampleResume";
+import ResumeField from "./ResumeField";
 
 export default function ResumeContainer() {
   // const sample = {sampleResume: "peos"};
@@ -14,7 +15,10 @@ export default function ResumeContainer() {
       <h1>This is where your resume goes</h1>
       {obj.map(info => (
         <ResumeField
-          
+        key={info.basics}
+        name={info.basics.name}
+        label={info.basics.label}
+        email={info.basics.email}
         />
       ))}
     </>
