@@ -118,16 +118,32 @@ $(function () {
 
     const candidateName = resumeData.basics.name;
     const label = resumeData.basics.label;
-    const address = Object.values(resumeData.basics.location)    
+    const address = Object.values(resumeData.basics.location)
     const contactEmail = resumeData.basics.email;
     const contactPhone = resumeData.basics.phone;
+    const website = resumeData.basics.website;
+    const twitterProfile = Object.values(resumeData.basics.profiles[0])
+
     // Candidate Name & title
     $('.name').html(candidateName)
     $('.title').html(label)
 
-    // looping through Location Object 
     $('.location').html(`${address[0]}, ${address[1]}, ${address[2]}, ${address[3]}, ${address[4]}`)
 
+    // contact details 
     $('.emailPhone').html(`Email : ${contactEmail} | ${contactPhone}`)
+
+    $('.portfolioSite').html(`Portfolio : <a class="site" href="${website}">${website}</a> | <a class="site" href="${twitterProfile[2]}"><i class="fab fa-twitter"></i></a>, twitterUrl : <a class="site" href="${twitterProfile[2]}">@${twitterProfile[1]}</a> `)
+
+    // Main Section Content Starts 
+    const candidateSummary = resumeData.basics.summary;
+    $('.profileSummary').html(`<p>${candidateSummary}</p>`)
+
+    // Iterating Education array containing object 
+    const edu = resumeData.education.forEach((eduData) => {
+        console.log(eduData);
+
+
+    })
 
 });

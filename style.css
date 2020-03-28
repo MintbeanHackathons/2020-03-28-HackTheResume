@@ -240,7 +240,7 @@ img {
     height: auto;
 }
 
-h1, h2,h3, h4, p, li, ul {
+h1, h2, h3, h4, p, li, ul {
     margin: 0;
     padding: 0;
 }
@@ -258,21 +258,56 @@ li, a {
 
 /* Styling Starts  */
 
-body{
+body {
     margin: 5%;
+}
+
+/* Header Styling Starts  */
+
+header {
+    text-align: center;
+    padding: 2%;
     border: 1px solid lightslategray;
     border-radius: 5px;
+    margin: 2% auto;
 }
 
-header{
-    text-align: center;
-}
-
-.name{
+.name {
     font-size: calc(3rem + 0.5vw);
 }
 
-.location, .emailPhone{
+.location, .emailPhone, .portfolioSite {
+    font-size: calc(1rem + 0.5vw);
+    color: #000;
+}
+
+.portfolioSite a {
+    color: inherit;
+}
+
+/* Header Styling Ends  */
+
+/* Main Styling Starts  */
+
+main {
+    padding: 2%;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    margin: 2% auto;
+}
+
+.sectionHeading {
+    margin: 2% auto;
+}
+
+.sectionHeading h3 {
+    font-size: calc(1.2rem + 0.5vw);
+    border-bottom: 1px solid lightcoral;
+}
+
+.profileSummary {
+    margin: 1% auto;
     font-size: calc(1rem + 0.5vw);
 }
 
+/* Main Styling Ends  */
