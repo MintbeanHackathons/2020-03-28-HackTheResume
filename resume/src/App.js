@@ -1,12 +1,14 @@
 import React from "react";
-import Section from "./components/section";
+import Section from "./components/Section";
 import resumeJSON from "./data/resume";
 
 import "./App.css";
 
 function App() {
+  let counter = 0;
   const sections = Object.keys(resumeJSON).map(section => {
-    return <Section title={section} info={resumeJSON[section]} />;
+    counter++;
+    return <Section title={section} info={resumeJSON[section]} key={counter} />;
   });
 
   return (
