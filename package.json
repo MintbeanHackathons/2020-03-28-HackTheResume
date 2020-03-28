@@ -1,0 +1,29 @@
+{
+  "name": "2020-03-28-HackTheResume",
+  "version": "1.0.0",
+  "description": "## Prize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svkalvakolanu/2020-03-28-HackTheResume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svkalvakolanu/2020-03-28-HackTheResume/issues"
+  },
+  "homepage": "https://github.com/svkalvakolanu/2020-03-28-HackTheResume#readme",
+  "dependencies": {
+    "next": "^9.3.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
