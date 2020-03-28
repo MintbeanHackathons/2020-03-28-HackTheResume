@@ -14,6 +14,6 @@
 
 .section-body {
   font-size: small;
-  align-items: flex-start;
-  justify-content: center;
+
+  justify-content: flex-start;
 }
