@@ -148,6 +148,27 @@
         "Ferrets",
         "Unicorns"
       ]
+    },
+    {
+      "name": "Board games",
+      "keywords": [
+        "Risk",
+        "Catan"
+      ]
+    },
+    {
+      "name": "Board games2",
+      "keywords": [
+        "Risk",
+        "Catan"
+      ]
+    },
+    {
+      "name": "Board games3",
+      "keywords": [
+        "Risk",
+        "Catan"
+      ]
     }
   ],
   "references": [
