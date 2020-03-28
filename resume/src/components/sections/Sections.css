@@ -1,0 +1,19 @@
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: larger;
+  padding-right: 5em;
+}
+
+.section-body {
+  font-size: small;
+  align-items: flex-start;
+  justify-content: center;
+}
