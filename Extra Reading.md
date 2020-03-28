@@ -8,7 +8,7 @@ Here's the first big difference between academic coding and professional coding:
 
 The exercise we will be presenting you will be intentionally simple so that you can focus on writing clean code in a fair amount of time, rather than rushing to make something that looks good on the screen but is a ball of wax in the repo. So, let's not make spaghetti -- we want to make lasagna, nice and layered code that's easy to reason about.
 
-So, in a professional setting, you write code for other people, not just for  the machine, not just for yourself, and not just for the grade. This is something that gets glossed over in academic settings. Collaboration is very rarely taught rigorously and in the right way in schools. 
+So, in a professional setting, you write code for other people, not just for  the machine, not just for yourself, and not just for the grade. This is something that gets glossed over in academic settings. Collaboration is very rarely taught rigorously and in the right way in schools.
 
 In CareerHack, we provide developers with information they can use in their own careers. Part of this involves spreading knowledge of best practices and design patterns through code review in Part 2. Another part of it is Q&A and discussions in the chatroom.
 
@@ -20,7 +20,7 @@ Having standardized data formats lets people collaborate on building a better ec
 
 1. The `*.mp3` format allows music creators, streaming companies, software companies, open source tools, and listeners focus on making & sharing great music.
 1. The `*.csv` format lets all kinds of software systems talk to each other using imports/exports, while letting human beings retain the ability to clean and format large datasets using tools that understand `*.csv` files.
-1. Image formats like `*.png`, `*.jpg`, `*.gif` 
+1. Image formats like `*.png`, `*.jpg`, `*.gif`
 1. The `http` protocol
 
 A standardized résumé format, if one arises, enables many cool things:

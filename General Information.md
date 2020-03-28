@@ -69,7 +69,7 @@ Suggested methods:
 
 * [Repl.it](https://repl.it/@monarchwadia/Example-Nodejs-Server) is a great way to deploy backend code for an example project, including a full-stack Express application.
 
-If the above are not options for you, you can capture your screen and attach a video with your final push. (including with your cellphone camera, no big deal). 
+If the above are not options for you, you can capture your screen and attach a video with your final push. (including with your cellphone camera, no big deal).
 
 As a last resort, screenshots uploaded in your final push will do.
 
@@ -89,4 +89,3 @@ No points are awarded for things like:
 1. Positive comments like "Awesome!" or "Great job!" or "I like this!"
 1. Harrassing, abusive or sarcastic comments (these could disqualify you and possibly get you banned)
 1. Other obviously low-value comments
-
