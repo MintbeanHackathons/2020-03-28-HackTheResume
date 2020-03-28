@@ -1,0 +1,18 @@
+.introductionContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 100%;
+}
+
+.introductionName {
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.introductionLabel {
+  font-size: 35px;
+  color: grey;
+  padding-bottom: 20px;
+}
