@@ -1,13 +1,15 @@
 import React from 'react';
-import data from '../data/data.json'
+import Contact from './Contact';
+import Skills from './Skills';
 
 const Sidebar = () => {
-    return(
+
+    return (
         <div className="sidebar">
-            Sidebar
+            <Contact />
+            <Skills />
         </div>
     )
 }
-
 
 export default Sidebar

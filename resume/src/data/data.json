@@ -24,9 +24,8 @@
             "network": "Github",
             "username": "jngong",
             "url": "https://github.com/jngong"
-        }
-    
-    ]},
+        }]
+    },
     "work": [
         {
             "company": "General Assembly",
@@ -101,21 +100,33 @@
       "website": "http://publication.com",
       "summary": "Description..."
     }],
-    "skills": [{
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "React",
-        "Ruby",
-        "Rails",
-        "NodeJS",
-        "ExpressJS",
-        "PostgreSQL"
-      ]
-    }],
+    "skills": [
+        {
+            "name": "Web Development",
+            "level": "",
+            "keywords": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "React",
+                "Ruby",
+                "Rails",
+                "NodeJS",
+                "ExpressJS",
+                "PostgreSQL"]
+        },
+        {
+            "name": "Project Management",
+            "level": "",
+            "keywords": [
+                "Agile Methodology",
+                "Scrum Framework",
+                "Trello",
+                "Wrike",
+                "Git",
+                "Github"]
+        }
+    ],
     "languages": [{
       "language": "English",
       "fluency": "Native speaker"
