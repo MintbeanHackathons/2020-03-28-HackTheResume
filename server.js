@@ -1,5 +1,8 @@
+// express requirements  
 const express = require('express');
 const app     = express();
+
+//resume schema
 const resSchema = {
     "basics": {
       "name": "John Doe",
@@ -93,8 +96,10 @@ const resSchema = {
       "reference": "Reference..."
     }]
   }
+
+// 
 app.get('/resume', (req, res) => {
-    res.send('hitting');
+    res.render('show.ejs',{ resi :resSchema});
 });
 
 app.listen(3000, ()=>{
