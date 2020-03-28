@@ -1,3 +1,58 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .App {
-  text-align: center;
+  padding: 20px;
+}
+
+.App ul {
+  margin-inline-start: 30px;
+}
+
+.App h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.App .label {
+  display: block;
+  font-size: 3.5rem;
+  margin-bottom: 0px;
+}
+
+.App h2 {
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+}
+
+.App section {
+  margin: 50px 0;
+}
+
+.App .contact-info {
+  padding: 20px;
+  background-color: #ececec;
+  border-radius: 5px;
+}
+
+.App .contact-info span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.App .contact-info h3 {
+  font-size: 1.7rem;
+  margin-bottom: 7px;
+}
+
+.App .contact-info .location span, .App .contact-info .profiles a {
+  margin-left: 40px;
 }

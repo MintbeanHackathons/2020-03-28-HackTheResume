@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import resumeJson from './assets/resume.json';
 
@@ -12,19 +12,20 @@ import Reference from "./components/Reference/Reference";
 
 function App() {
   const resumeData = resumeJson;
-  console.log(resumeData);
   return (
     <main className="App">
       <h1>{resumeData.basics.name}</h1>
-      <span>{resumeData.basics.label}</span>
+      <span className="label">{resumeData.basics.label}</span>
       <img src={resumeData.basics.picture} />
       <section className="contact-info">
-        <span className="email">{resumeData.basics.email}</span>
-        <span className="phone">{resumeData.basics.phone}</span>
+        <h2>Contact Info</h2>
+        <span className="email"><i class="far fa-envelope"></i> {resumeData.basics.email}</span>
+        <span className="phone"><i class="fas fa-phone"></i> {resumeData.basics.phone}</span>
         <span className="website">
-          <a href={resumeData.basics.website}>{resumeData.basics.website}</a>
+          <i class="fas fa-home"></i> <a href={resumeData.basics.website}>{resumeData.basics.website}</a>
         </span>
         <div className="location">
+          <h3><i class="fas fa-map-marker"></i> Location</h3>
           <span className="address">{resumeData.basics.location.address}</span>
           <span className="postal-code">{resumeData.basics.location.postalCode}</span>
           <span className="city">{resumeData.basics.location.city}</span>
@@ -32,61 +33,70 @@ function App() {
           <span className="region">{resumeData.basics.location.region}</span>
         </div>
         <div className="profiles">
+          <h3><i class="far fa-user"></i> Profiles</h3>
           {resumeData.basics.profiles.length ?
-            resumeData.basics.profiles.map(profile => {
-              return <a href={profile.url}>{profile.network} @{profile.username}</a>
+            resumeData.basics.profiles.map((profile, index) => {
+              return <a key={index} href={profile.url}>{profile.network} @{profile.username}</a>
             })
             : ""
           }
         </div>
       </section>
       <section className="work">
-        {resumeData.work.map(experience => {
-          return <Experience type="work" experience={experience} />
+        <h2><i class="fas fa-briefcase"></i> Work</h2>
+        {resumeData.work.map((experience, index) => {
+          return <Experience key={index} type="work" experience={experience} />
         })}
       </section>
       <section className="volunteer">
-        {resumeData.volunteer.map(experience => {
-          return <Experience type="volunteer" experience={experience} />
+        <h2><i class="fas fa-hands-helping"></i> Volunteer</h2>
+        {resumeData.volunteer.map((experience, index) => {
+          return <Experience key={index} type="volunteer" experience={experience} />
         })}
       </section>
       <section className="education">
-        {resumeData.education.map(study => {
-          return <Study {...study} />
+        <h2><i class="fas fa-university"></i> Education</h2>
+        {resumeData.education.map((study, index) => {
+          return <Study key={index} {...study} />
         })}
       </section>
       {resumeData.awards.length &&
         <section className="awards">
-          {resumeData.awards.map(award => {
-            return <Award {...award} />
+          <h2><i class="fas fa-trophy"></i> Awards</h2>
+          {resumeData.awards.map((award, index) => {
+            return <Award key={index} {...award} />
           })}
         </section>
       }
       {resumeData.skills.length &&
         <section className="skills">
-          {resumeData.skills.map(skill => {
-            return <Skill {...skill} />
+          <h2><i class="fas fa-code"></i> Skills</h2>
+          {resumeData.skills.map((skill, index) => {
+            return <Skill key={index} {...skill} />
           })}
         </section>
       }
       {resumeData.languages.length &&
         <section className="languages">
-          {resumeData.languages.map(language => {
-            return <Language {...language} />
+          <h2><i class="fas fa-language"></i> Languages</h2>
+          {resumeData.languages.map((language, index) => {
+            return <Language key={index} {...language} />
           })}
         </section>
       }
       {resumeData.interests.length &&
         <section className="interests">
-          {resumeData.interests.map(interest => {
-            return <Interest {...interest} />
+          <h2><i class="far fa-heart"></i> Interests</h2>
+          {resumeData.interests.map((interest, index) => {
+            return <Interest key={index} {...interest} />
           })}
         </section>
       }
       {resumeData.references.length &&
         <section className="references">
-          {resumeData.references.map(reference => {
-            return <Reference {...reference} />
+          <h2><i class="fas fa-user-friends"></i> References</h2>
+          {resumeData.references.map((reference, index) => {
+            return <Reference key={index} {...reference} />
           })}
         </section>
       }

@@ -8,8 +8,8 @@ function Interest(props) {
       {props.keywords.length &&
         <>
           <ul className="keywords">
-            {props.keywords.map(keyword => {
-              return <li>{keyword}</li>
+            {props.keywords.map((keyword, index) => {
+              return <li key={index}>{keyword}</li>
             })}
           </ul>
         </>

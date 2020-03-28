@@ -10,8 +10,8 @@ function Skill(props) {
         <>
           <h3>Keywords</h3>
           <ul className="keywords">
-            {props.keywords.map(keyword => {
-              return <li>{keyword}</li>
+            {props.keywords.map((keyword, index) => {
+              return <li key={index}>{keyword}</li>
             })}
           </ul>
         </>
