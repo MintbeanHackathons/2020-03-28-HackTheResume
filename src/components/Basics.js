@@ -1,6 +1,14 @@
 import React from 'react';
 
 const Basics = ({ data, ...props }) => {
+
+  const profiles = data.profiles.map(profile => (
+    <>
+      <h3>{profile.network}</h3>
+      <a href={profile.url}>{profile.username}</a>
+    </>
+  ));
+
   return (
     <div id='basics-container'>
       <h1>{data.name}</h1>
@@ -21,6 +29,8 @@ const Basics = ({ data, ...props }) => {
       <p>City: {data.location.city}</p>
       <p>Region/Country: {data.location.region}, {data.location.countryCode}</p>
 
+      <h2>Profiles</h2>
+      {profiles}
     </div>
   );
 };
