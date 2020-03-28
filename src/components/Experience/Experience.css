@@ -1,0 +1,16 @@
+.Experience {
+  margin-left: 15px;
+}
+
+.Experience span {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.Experience .organization, .Experience .company {
+  font-size: 1.7rem;
+}
+
+.Experience .position {
+  margin-bottom: 10px;
+}

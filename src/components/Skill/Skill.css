@@ -1,0 +1,17 @@
+.Skill {
+  margin-left: 15px;
+}
+
+.Skill span {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.Skill .name {
+  font-size: 1.5rem;
+}
+
+.Skill .keyword {
+  color: grey;
+  display: inline-block;
+}

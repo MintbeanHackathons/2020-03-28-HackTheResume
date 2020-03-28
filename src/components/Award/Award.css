@@ -1,0 +1,13 @@
+.Award {
+  margin-left: 15px;
+}
+
+.Award span {
+  display: block;
+  margin-bottom: 3px;
+}
+
+
+.Award .title {
+  font-size: 1.5rem;
+}

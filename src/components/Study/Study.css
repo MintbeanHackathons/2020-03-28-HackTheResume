@@ -1,0 +1,12 @@
+.Study {
+  margin-left: 15px;
+}
+
+.Study span {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.Study .institution {
+  font-size: 1.7rem;
+}
