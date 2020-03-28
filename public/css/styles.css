@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    font-weight: bold;
+}
+
+span.skill {
+    font-weight: normal;
+}
+
+.skills, .work, .education {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+div.description, h4 {
+    width: 86px;
+    margin-right: 10px;
+}

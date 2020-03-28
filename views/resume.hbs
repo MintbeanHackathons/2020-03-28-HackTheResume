@@ -5,53 +5,67 @@
     </div>
     <div class="contact">
         <p> {{ basics.location.city }}, {{ basics.location.region }}</p>
-        <a href="mailto:{{basics.email}}">Email</a>
-        <p>{{basics.phone}}</p>
+        <a href="mailto:{{basics.email}}">Email</a> |
         <a href="{{basics.website}}">Website</a>
         {{#each basics.profiles}}
-        <a href='{{this.url}}'>{{this.network}}</a>
+        | <a href='{{this.url}}'>{{this.network}}</a>
         {{/each}}
+        <p>{{basics.phone}}</p>
     </div>
 </header>
-<p>{{ basics.summary }}</p>
-<div class="skills">
-    <h4>Skills</h4>
-    {{#each skills}}
+<main>
+    <p>{{ basics.summary }}</p>
     <div class="skills">
-        <p>
-            <span>{{this.name}}:</span>
-            {{#each keywords}}
-            <span class="skill">{{this}}, </span>
-            {{/each}}
-        </p>
+        <div class="description">
+            <h4>Skills</h4>
+        </div>
+        <div>
+            {{#each skills}}
+            <div class="skills">
+                <p>
+                    <span>{{this.name}}:</span>
+                    {{#each keywords}}
+                    <span class="skill">{{this}}, </span>
+                    {{/each}}
+                </p>
 
 
-    </div>
-    {{/each}}
-</div>
-<div class="skills">
-    <h4>Experience</h4>
-    {{#each work}}
-    <div class="job">
-        <p><span>{{this.company}}</span></p>
-        <p>{{this.position}}</p>
-        <p>{{this.startDate}} - {{this.endDate}}</p>
-        <p>{{this.summary}}</p>
-        <ul>
-            {{#each highlights}}
-            <li>{{this}}</li>
+            </div>
             {{/each}}
-        </ul>
+        </div>
     </div>
-    {{/each}}
-</div>
-<div class="education">
-    <h4>Education</h4>
-    {{#each education}}
-    <div class="school">
-        <p><span>{{this.institution}}</span></p>
-        <p>{{this.studyType}}, {{this.area}}</p>
-        <p>{{this.endDate}}</p>
+    <div class="work">
+        <div class="description">
+            <h4>Experience</h4>
+        </div>
+        <div>
+            {{#each work}}
+            <div class="job">
+                <p><span>{{this.company}}</span></p>
+                <p>{{this.position}}</p>
+                <p>{{this.startDate}} - {{this.endDate}}</p>
+                <p>{{this.summary}}</p>
+                <ul>
+                    {{#each highlights}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{/each}}
+        </div>
     </div>
-    {{/each}}
-</div>
+    <div class="education">
+        <div class="description">
+            <h4>Education</h4>
+        </div>
+        <div>
+            {{#each education}}
+            <div class="school">
+                <p><span>{{this.institution}}</span></p>
+                <p>{{this.studyType}}, {{this.area}}</p>
+                <p>{{this.endDate}}</p>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</main>
