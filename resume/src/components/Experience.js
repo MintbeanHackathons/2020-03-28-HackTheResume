@@ -13,7 +13,6 @@ const Experience = (props) => {
                     {work.highlights.map(highlight => <li>{highlight}</li>)}
                 </ul>
                 <div><a href={work.website}>Website</a></div>
-                <hr/>
             </div>
         )
     })

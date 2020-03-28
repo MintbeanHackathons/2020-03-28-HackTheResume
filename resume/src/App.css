@@ -46,13 +46,13 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: var(--light-shade-color);
 }
 
 .sidebar {
   width: 28%;
   padding: 1rem 2rem;
-  background-color: var(--light-shade-color);
-
+  border-right: 2px solid var(--dark-shade-color)
 }
 
 .main {
@@ -74,11 +74,12 @@ header {
   padding-left: 2rem;
   display: flex;
   flex-flow: row wrap;
-  border-top: 2px solid var(--dark-shade-color)
+  background-color: var(--light-shade-color);
+  border-top: 2px solid var(--dark-shade-color);
+  padding-bottom: 2rem;
 }
 
 .footer > div {
   width: 30%;
   margin: 1rem;
-  background-color: var(--light-shade-color);
 }
