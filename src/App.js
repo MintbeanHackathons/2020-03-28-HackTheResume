@@ -33,7 +33,7 @@ function BuildBasicsElement(basics) {
   );
 }
 
-function buildWorkElement(work) {
+function BuildWorkElement(work) {
   return (
     <header className="App-header">
       <br></br>Welcome to my React Web Application
