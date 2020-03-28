@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "./components/Section";
 import resumeJSON from "./data/resume";
+import Basics from "./components/sections/Basics";
 
 import "./App.css";
 
@@ -15,7 +16,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>Resume</p>
-        <section>{sections}</section>
+        {/* <section>{sections}</section> */}
+        <Basics title="Basics" data={resumeJSON.basics} />
       </header>
     </div>
   );

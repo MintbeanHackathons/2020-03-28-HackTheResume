@@ -3,7 +3,7 @@ import React from "react";
 export default function Title(props) {
   return (
     <>
-      <div className="section">{}</div>
+      <div className="section">{props.name}</div>
     </>
   );
 }

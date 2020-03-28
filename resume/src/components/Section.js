@@ -5,7 +5,8 @@ import Info from "./Info";
 export default function Section(props) {
   return (
     <>
-      <div className="section">{props.title}</div>
+      <Title name={props.title} />
+      <Info data={props.info} />
     </>
   );
 }
