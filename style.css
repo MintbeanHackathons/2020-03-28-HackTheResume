@@ -1,0 +1,14 @@
+header {
+  border-bottom: solid 5px rgb(15, 173, 15);
+}
+ul > * {
+  display: inline;
+  padding-right: 5px;
+}
+ul > :first-child {
+  font-weight: 900;
+}
+ul > :nth-child(3) {
+  font-style: italic;
+  display: block;
+}
