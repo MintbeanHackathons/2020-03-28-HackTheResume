@@ -38,3 +38,6 @@ There are no other restrictions.
 1. The requirements are intentionally minimalistic so you can get as creative as you'd like.
 1. You get a LOT of time for code review comments. So you can win even if you feel your project isn't great, simply on the strength of your code review comments!
 1. Keep in mind, 33% of your score is based on aesthetic appeal! So try to make it look nice.
+
+
+["resume"]();
