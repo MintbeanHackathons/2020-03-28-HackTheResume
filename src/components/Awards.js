@@ -1,8 +1,20 @@
 import React from 'react';
 
-const Awards = props => {
+const Awards = ({ data, ...props }) => {
+
+  const awards = data.map(award => (
+    <div>
+      <h3>{award.title}</h3>
+      <p>{award.awarder} | {award.date}</p>
+      <p>{award.summary}</p>
+    </div>
+  ));
+
   return (
-    <div />
+    <div id='awards-container'>
+      <h2>Awards</h2>
+      {awards}
+    </div>
   );
 };
 

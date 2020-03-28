@@ -12,9 +12,8 @@ const Experience = ({ data, type, orgType, title, ...props }) => {
     return (
       <div key={generateKey()}>
         <h3>{data[orgType]}</h3>
-        <h4>{position}</h4>
+        <p>{position} | {exp.startDate} - {exp.endDate}</p>
         {type !== 'education' && <a href={exp.website}>{exp.website}</a>}
-        <p>{exp.startDate} - {exp.endDate}</p>
         <p>{summary}</p>
         <ul>
           {exp[listItems].map(item => <li key={generateKey()}>{item}</li>)}
