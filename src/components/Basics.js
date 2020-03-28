@@ -1,37 +1,44 @@
 import React from 'react';
 import generateKey from '@tammiec/generatekey';
 
+import './Basics.scss';
+
 const Basics = ({ data, ...props }) => {
 
-  const profiles = data.profiles.map(profile => (
-    <div key={generateKey()}>
-      <h3>{profile.network}</h3>
-      <a href={profile.url}>{profile.username}</a>
-    </div>
-  ));
+  const profiles = data.profiles.map(profile => (<p key={generateKey()}>{profile.network}: <a href={profile.url}>@{profile.username}</a></p>));
 
   return (
     <div id='basics-container'>
-      <h1>{data.name}</h1>
-      <h3>{data.label}</h3>
-      {data.img && <img src={data.img} alt='headshot' />}
+      <div className='basics-header'>
+        <div>
+          <h1>{data.name}</h1>
+          {data.picture && <img src={data.picture} alt='headshot' />}
+        </div>
+        <h3>{data.label}</h3>
+      </div>
 
-      <h2>Contact</h2>
-      <p>Email: {data.email}</p>
-      <p>Phone: {data.phone}</p>
-      <p>Website: {data.website}</p>
+      <div>
+        <h2>Summary</h2>
+        <p>{data.summary}</p>
 
-      <h2>Summary</h2>
-      <p>{data.summary}</p>
+        <div className='contact-section'>
+          <div>
+            <h2>Contact</h2>
+            <p>Email: {data.email}</p>
+            <p>Phone: {data.phone}</p>
+            <p>Website: {data.website}</p>
+            {profiles}
+          </div>
+          <div>
+            <h2>Location</h2>
+            <p>Address: {data.location.address}</p>
+            <p>Postal Code: {data.location.postalCode}</p>
+            <p>City: {data.location.city}</p>
+            <p>Region/Country: {data.location.region}, {data.location.countryCode}</p>
+          </div>
+        </div>
+      </div>
 
-      <h2>Location</h2>
-      <p>Address: {data.location.address}</p>
-      <p>Postal Code: {data.location.postalCode}</p>
-      <p>City: {data.location.city}</p>
-      <p>Region/Country: {data.location.region}, {data.location.countryCode}</p>
-
-      <h2>Profiles</h2>
-      {profiles}
     </div>
   );
 };

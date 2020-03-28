@@ -2,7 +2,7 @@
   "basics": {
     "name": "John Doe",
     "label": "Programmer",
-    "picture": "",
+    "picture": "https://s3.amazonaws.com/pixpa.com/com/articles/1567147079-440035-headshot-2jpg.png",
     "email": "john@gmail.com",
     "phone": "(912) 555-4321",
     "website": "http://johndoe.com",

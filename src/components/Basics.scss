@@ -1,0 +1,33 @@
+#basics-container {
+  width: 100%;
+}
+
+.basics-header {
+
+  width: 100%;
+
+  img {
+    height: 10em;
+    width: 10em;
+    object-fit: cover;
+    border-radius: 5em;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  div {
+    flex-basis: 50%;
+    min-width: 500px;
+  }
+}
