@@ -6,9 +6,6 @@ import { Awards, Basics, Education, Interests, Languages, Publications, Referenc
 import './App.scss';
 
 function App() {
-
-  console.log('resume:', resume)
-
   return (
     <div className="App">
       {resume.basics && <Basics data={resume.basics} />}
