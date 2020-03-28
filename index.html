@@ -12,13 +12,13 @@
     />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/style.css" />
   </head>
@@ -40,6 +40,36 @@
         <div class="row" id="location/profiles">
           <div class="col-sm-6" id="location"></div>
           <div class="col-sm-6" id="profiles"></div>
+        </div>
+      </div>
+    </div>
+    <div class="tile is-ancestor" id="resume-data">
+      <div class="tile is-vertical">
+        <div class="tile">
+          <div class="tile is-vertical is-8 is-parent">
+            <article class="tile is-child notification" id="work"></article>
+            <article
+              class="tile is-child notification"
+              id="volunteering"
+            ></article>
+            <article
+              class="tile is-child notification"
+              id="education"
+            ></article>
+          </div>
+          <div class="tile is-vertical is-4 is-parent">
+            <article class="tile is-child notification" id="awards"></article>
+            <article
+              class="tile is-child notification"
+              id="publications"
+            ></article>
+            <article class="tile is-child notification" id="skills"></article>
+          </div>
+        </div>
+        <div class="tile is-parent" id="footer-tile">
+          <article class="tile is-child notification" id="languages"></article>
+          <article class="tile is-child notification" id="interests"></article>
+          <article class="tile is-child notification" id="references"></article>
         </div>
       </div>
     </div>

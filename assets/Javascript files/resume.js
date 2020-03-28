@@ -30,7 +30,7 @@ var resume = {
       startDate: "2013-01-01",
       endDate: "2014-01-01",
       summary: "Description...",
-      highlights: ["Started the company"]
+      highlights: ["Started the company", "poop"]
     }
   ],
   volunteer: [

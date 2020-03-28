@@ -1,1 +1,18 @@
-
+/* Styling profiles lists in jumbotron */
+#profiles > ul:not(:last-child) {
+  border-bottom: 1px solid;
+  margin-bottom: 5px;
+}
+.jumbotron.jumbotron-fluid {
+  padding: 10px;
+}
+/* Adds margins to the container div of the page */
+#resume-data {
+  margin: 10px;
+}
+/* Adds borders and margins to the bottom of uls in the body */
+#resume-data > ul:not(:last-child) {
+  border-bottom: 1px solid;
+  margin-bottom: 5px;
+}
+/* Adds borders to the articles at the bottom of the page */
