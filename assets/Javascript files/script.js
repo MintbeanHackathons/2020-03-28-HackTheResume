@@ -19,5 +19,5 @@ for (let i of resume.basics.profiles) {
     profileDataListElement.text(j + ": " + i[j]);
     profileData.append(profileDataListElement);
   }
-  $("profiles").append(profileData);
+  $("#profiles").append(profileData);
 }
