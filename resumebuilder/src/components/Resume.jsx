@@ -1,35 +1,16 @@
 import React from "react";
 import applicant from "../resume/applicant";
-import ResumeBasics from "./ResumeBasics";
+import Basics from "./Basics";
+import WorkExperience from "./WorkExperience";
 
 const Resume = props => {
 	let { applicant } = props;
 
-	const workExp = applicant.work.map(exp => {
-		let highlights = exp.highlights.map(high => {
-			return high;
-		});
-		return (
-			<p>
-				<h4>Company: {exp.company}</h4>
-				<p>Position: {exp.position}</p>
-				<p>Webiste: {exp.website}</p>
-				<p>StartDate: {exp.startDate}</p>
-				<p>EndDate: {exp.endDate}</p>
-				<p>Summary: {exp.summary}</p>
-				<p>Highlights: {highlights}</p>
-			</p>
-		);
-	});
-
 	return (
 		<>
 			<div>
-				<ResumeBasics applicant={applicant}></ResumeBasics>
-				<h4>Work</h4>
-				{workExp}
-
-
+				<Basics applicant={applicant}></Basics>
+        <WorkExperience applicant={applicant} />
 				{/* <ul></ul>
 					<li>{props.applicant.volunteer}</li>
 					<li>{props.applicant.education}</li>
