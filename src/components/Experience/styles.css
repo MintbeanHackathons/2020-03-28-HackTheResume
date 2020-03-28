@@ -1,9 +1,21 @@
+.workContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
 .workHeader {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 .company {
   font-size: 25px;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 22px;
   font-weight: bold;
 }

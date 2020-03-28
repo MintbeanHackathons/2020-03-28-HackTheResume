@@ -1,6 +1,8 @@
 import React from "react"
 
-const IntroductionSubField = ({ field }) => {
+import "./styles.css"
+
+const LinkSubField = ({ field }) => {
   return (
     <div className="subFieldContainer" >
       <img className="subFieldIcon" src={field.image} alt={field.alt} />
@@ -9,4 +11,4 @@ const IntroductionSubField = ({ field }) => {
   )
 }
 
-export default IntroductionSubField
+export default LinkSubField

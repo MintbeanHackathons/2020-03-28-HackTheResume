@@ -16,14 +16,3 @@
   color: grey;
   padding-bottom: 20px;
 }
-
-.subFieldContainer {
-  display: flex;
-  padding: 5px;
-}
-
-.subFieldIcon {
-  width: 20px;
-  height: 20px;
-  padding-right: 10px;
-}

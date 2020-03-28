@@ -1,7 +1,7 @@
 import React from "react"
 import Name from "./Name"
 import Label from "./Label"
-import IntroductionSubField from "./IntroductionSubField"
+import LinkSubField from "../shared/LinkSubField"
 import Divider from "../shared/Divider"
 import About from "./About"
 
@@ -39,7 +39,7 @@ const Introduction = ({ basics }) => {
 
   const renderIntroductionFields = (fields) => {
     return fields.map((field, index) => {
-      return <IntroductionSubField field={field} key={index} />
+      return <LinkSubField field={field} key={index} />
     })
   }
 
