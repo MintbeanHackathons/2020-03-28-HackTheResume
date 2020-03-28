@@ -9,6 +9,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: #3561a7;
+}
+
+a:visited {
+  color: #9557c3;
+}
+
 .App {
   padding: 20px;
 }
