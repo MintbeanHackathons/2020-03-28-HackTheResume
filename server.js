@@ -100,7 +100,7 @@ const resSchema = {
   }
 
 // 
-app.get('/resume', (req, res) => {
+app.get('/', (req, res) => {
     res.render('show.ejs',{ resi :resSchema});
 });
 
