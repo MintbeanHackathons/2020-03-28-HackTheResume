@@ -1,0 +1,94 @@
+{
+    "basics": {
+      "name": "Natalie Estrada",
+      "label": "Full Stack Software Developer",
+      "picture": "",
+      "email": "nmestrad@gmail.com",
+      "phone": "(204) 204-4024",
+      "website": "https://gifted-roentgen-2342b6.netlify.com/",
+      "summary": "talking to ducks is the best!",
+      "location": {
+        "address": "123 Main St",
+        "postalCode": "60626",
+        "city": "Chicago",
+        "countryCode": "US",
+        "region": "Illnois"
+      },
+      "profiles": [{
+        "network": "LinkedIn",
+        "username": "nmestrad",
+        "url": "https://www.linkedin.com/in/natalie-estrada-dev/"
+      }]
+    },
+    "work": [{
+      "company": "Fullstack Academy",
+      "position": "Teaching Fellow",
+      "website": "",
+      "startDate": "2019-11-01",
+      "endDate": "2020-02-21",
+      "summary": "Acting as teaching assistant for Web Development Bootcamp",
+      "highlights": [
+        "Held daily algorithm practice",
+        "Held admissions techincal interviews"
+      ]
+    }],
+    "volunteer": [{
+      "organization": "Organization",
+      "position": "Volunteer",
+      "website": "http://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description...",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }],
+    "education": [{
+      "institution": "University",
+      "area": "Materials Science and Engineering",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "gpa": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }],
+    "awards": [{
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }],
+    "publications": [{
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "website": "http://publication.com",
+      "summary": "Description..."
+    }],
+    "skills": [{
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    }],
+    "languages": [{
+      "language": "English",
+      "fluency": "Native speaker"
+    }],
+    "interests": [{
+      "name": "Wildlife",
+      "keywords": [
+        "Birbs",
+        "Dolphins"
+      ]
+    }],
+    "references": [{
+      "name": "Reference McReferson",
+      "reference": "This person is amazing you should hire her"
+    }]
+  }

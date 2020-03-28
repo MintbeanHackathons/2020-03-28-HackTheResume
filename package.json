@@ -1,0 +1,52 @@
+{
+  "name": "Resume",
+  "version": "1.0.0",
+  "description": "resume builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "webpack -w & nodemon server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmestrada/2020-03-28-HackTheResume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmestrada/2020-03-28-HackTheResume/issues"
+  },
+  "homepage": "https://github.com/nmestrada/2020-03-28-HackTheResume#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.8.6",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "html-webpack-plugin": "^4.0.2",
+    "http-server": "^0.12.1",
+    "json-loader": "^0.5.7",
+    "morgan": "^1.10.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

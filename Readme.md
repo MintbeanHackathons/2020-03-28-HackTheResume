@@ -1,5 +1,6 @@
 # Today's Objective: Hack the Résumé
 
+## repli link for nmestrad: ("https://repl.it/@chakrasandwich/2020-03-28-HackTheResume")
 ## Prize
 
 $25 CAD Amazon gift card + bragging rights.
