@@ -23,7 +23,7 @@ const Experience = ({ data, type, orgType, title, ...props }) => {
   });
 
   return (
-    <div id='experience-container'>
+    <div className='experience-container'>
       <h2>{title}</h2>
       {experience}
     </div>
