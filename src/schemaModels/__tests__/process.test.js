@@ -113,7 +113,8 @@ const testResume = {
 
 describe("generating the resume", () => {
   it("should create a resume", () => {
-    const resume = generateResume(testResume)
+    const json = JSON.stringify(testResume)
+    const resume = generateResume(json)
     expect(resume instanceof Resume).toBe(true)
     expect(resume.basics instanceof Basics).toBe(true)
     expect(resume.work instanceof Work).toBe(true)

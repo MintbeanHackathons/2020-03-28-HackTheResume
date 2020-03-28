@@ -11,7 +11,8 @@ export const processJson = (json) => {
   }
 }
 
-export const generateResume = (rawData) => {
+export const generateResume = (json) => {
+  const rawData = processJson(json)
   const {
     education,
     awards,
