@@ -1,16 +1,15 @@
 import React from 'react';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import Input from '@material-ui/core/Input';
-import resume from './resume.json';
 import './App.css';
 import { useHistory } from "react-router-dom";
 
 
-export default function ComposedTextField() {
+export default function DataEntry({resume}) {
   let history = useHistory();
-  
+
   return (
-  <form >
+  <form onSubmit={()=> history.push({pathname:"/resume", state: {resume: resume}})} >
     <p>
       Enter your resume JSON to generate a resume
     </p>
