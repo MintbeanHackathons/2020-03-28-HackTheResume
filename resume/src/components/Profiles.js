@@ -7,7 +7,9 @@ function Profiles(props){
         <>
             <p className="contact">{profiles.network}</p>
             <p className="contact">Username: {profiles.username}</p>
-            <button target="_blank" href={profiles.url}className="contact">{profiles.network} Account</button>
+            <button onClick={() =>
+            window.open(profiles.url, "_blank")
+          }className="contact">{profiles.network} Account</button>
         </>
     )
 }
