@@ -1,0 +1,10 @@
+body {
+  height: 100%;
+  max-width: 100%;
+  background-color: white;
+  font-family: "Merriweather", serif;
+}
+
+h2 h3 h4 {
+  font-family: "Oswald", sans-serif;
+}
