@@ -1,7 +1,7 @@
 # Today's Objective: Hack the Résumé
 
 ## Submission
-[https://eloquent-keller-4fe4f3.netlify.com/]
+https://eloquent-keller-4fe4f3.netlify.com/
 
 ## Prize
 
