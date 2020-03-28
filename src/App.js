@@ -6,6 +6,8 @@ import { generateResume } from "./schemaModels/process"
 
 import Introduction from "./components/Introduction"
 import Experience from "./components/Experience"
+import Education from "./components/Education"
+import Volunteer from "./components/Volunteer"
 
 import Divider from "./components/shared/Divider"
 
@@ -18,6 +20,10 @@ function App() {
         <Introduction basics={resume.basics} />
         <Divider />
         <Experience work={resume.work} />
+        <Divider />
+        <Education />
+        <Divider />
+        <Volunteer />
         <Divider />
       </div>
     </div>
