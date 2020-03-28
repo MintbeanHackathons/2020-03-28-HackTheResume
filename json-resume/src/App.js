@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import DataEntry from './DataEntry';
 import Resume from './Resume';
@@ -9,8 +8,7 @@ import resume from './resume.json';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 function App() {
