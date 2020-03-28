@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title><%= resi.basics.name%>'s Resume</title>
+</head>
+<body>
+    <div>
+
+        <div><img src="<%= resi.basics.picture %>" alt="<%= resi.basics.name %>"></div>
+
+        <div> 
+            <h1><%= resi.basics.name %>: <%= resi.basics.label %></h1>
+        </div> 
+
+        <details>
+            <summary>
+                About <%=resi.basics.name%>
+            </summary>
+            <p>
+                <%= resi.basics.summary %>
+            </p>
+        </details>
+        <div>
+           <h3>Where to find me:</h3> 
+        <% for(property in resi.basics.location){%>
+            <%=resi.basics.location[property]%>
+            <%}%>
+        </div>
+        <div>
+            <h3> How to get a hold of me:</h3>
+            <b>Email:</b> <%=resi.basics.email%><br/>
+            <b>phone:</b> <%=resi.basics.phone%>
+        </div>
+        <div>
+            <h3> My social media :</h3>
+            <% for(let i=0; i< resi.basics.profiles.length; i++){%>
+                <%for(property in resi.basics.profiles[i]){%>
+                    <b><%=[property]%></b>:<%= resi.basics.profiles[i][property]%><br/>
+                    <%}%>
+            <%}%>
+        </div>
+        <div>
+            <h3> Work History :</h3>
+            <% for(let i=0; i< resi.work.length; i++){%>
+                <%for(property in resi.work[i]){%>
+                    <b><%=[property]%></b>: <%= resi.work[i][property]%><br/>
+                    <%}%>
+            <%}%>
+        </div>
+        <div>
+            <h3> Volunteer Experience :</h3>
+            <% for(let i=0; i< resi.volunteer.length; i++){%>
+                <%for(property in resi.volunteer[i]){%>
+                    <b><%=[property]%></b>: <%= resi.volunteer[i][property]%><br/>
+                    <%}%>
+            <%}%>
+        </div>
+        <div>
+            <h3> Education :</h3>
+            <% for(let i=0; i< resi.education.length; i++){%>
+                <%for(property in resi.education[i]){%>
+                    <b><%=[property]%></b>: <%= resi.education[i][property]%><br/>
+                    <%}%>
+            <%}%>
+        </div>
+        <div>
+            <h3> Awards :</h3>
+            <% for(let i=0; i< resi.awards.length; i++){%>
+                <%for(property in resi.awards[i]){%>
+                    <b><%=[property]%></b>: <%= resi.awards[i][property]%><br/>
+                    <%}%>
+            <%}%>
+        </div>
+        <div>
+            <h3> Skills :</h3>
+            <% for(let i=0; i< resi.skills.length; i++){%>
+                <%for(property in resi.skills[i]){%>
+                    <b><%=[property]%></b>: <%= resi.skills[i][property]%><br/>
+                    <%}%>
+            <%}%>
+        </div>
+        
+    
+    </div>
+</body>
+</html>
