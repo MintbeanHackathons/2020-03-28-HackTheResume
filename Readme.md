@@ -40,4 +40,4 @@ There are no other restrictions.
 1. Keep in mind, 33% of your score is based on aesthetic appeal! So try to make it look nice.
 
 
-["resume"]();
+["resume"](https://github.com/Michael-Xie/2020-03-28-HackTheResume/blob/master/docs/output.png);
