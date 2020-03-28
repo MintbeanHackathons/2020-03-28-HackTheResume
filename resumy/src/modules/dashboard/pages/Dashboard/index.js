@@ -4,5 +4,10 @@ import React from 'react';
 import { MainLayout } from '../../../../ui/layouts/MainLayout';
 
 export const Dashboard = () => {
-  return <MainLayout>Dashboard</MainLayout>;
+  return (
+    <MainLayout>
+      Dashboard
+      <p>JSON Schema compliant https://jsonresume.org/schema/</p>
+    </MainLayout>
+  );
 };

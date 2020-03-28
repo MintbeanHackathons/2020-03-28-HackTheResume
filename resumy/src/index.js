@@ -9,20 +9,18 @@ import { MyResumes } from './modules/myResumes/pages/MyResumes';
 import { CreateResume } from './modules/createResume/pages/CreateResume';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <Switch>
-        <Route path='/' exact>
-          <Dashboard />
-        </Route>
-        <Route path='/my-resumes' exact>
-          <MyResumes />
-        </Route>
-        <Route path='/create-resume' exact>
-          <CreateResume />
-        </Route>
-      </Switch>
-    </Router>
-  </React.StrictMode>,
+  <Router>
+    <Switch>
+      <Route path='/' exact>
+        <Dashboard />
+      </Route>
+      <Route path='/my-resumes' exact>
+        <MyResumes />
+      </Route>
+      <Route path='/create-resume' exact>
+        <CreateResume />
+      </Route>
+    </Switch>
+  </Router>,
   document.getElementById('root'),
 );
