@@ -3,12 +3,19 @@ import React from "react";
 const Awards = props => {
   return (
     <div>
-      <h4>
+      <h3>
         {props.data.title} - {props.data.date}
-      </h4>
-      <h5>{props.data.company}</h5>
+      </h3>
+      <h4>{props.data.awarder}</h4>
       <p>{props.data.summary}</p>
-      <style jsx>{``}</style>
+      <style jsx>{`
+        div {
+          background: #70e4ef;
+          padding: 20px;
+          border: 3px solid black;
+          margin: 20px auto;
+        }
+      `}</style>
     </div>
   );
 };

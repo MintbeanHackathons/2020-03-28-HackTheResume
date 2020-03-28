@@ -3,14 +3,21 @@ import React from "react";
 const Publications = props => {
   return (
     <div>
-      <h2>
+      <h3>
         <a href={props.data.website}>{props.data.name}</a> -{" "}
         {props.data.website}
-      </h2>
-      <h2>{props.data.publisher}</h2>
+      </h3>
+      <h3>{props.data.publisher}</h3>
       <h4>{props.data.releaseDate}</h4>
       <p>{props.data.summary}</p>
-      <style jsx>{``}</style>
+      <style jsx>{`
+        div {
+          background: #70e4ef;
+          padding: 20px;
+          border: 3px solid black;
+          margin: 20px auto;
+        }
+      `}</style>
     </div>
   );
 };

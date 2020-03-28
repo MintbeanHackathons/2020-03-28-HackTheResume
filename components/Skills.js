@@ -6,11 +6,19 @@ const Skills = props => {
   });
   return (
     <div>
-      <h2>
+      <h3>
         {props.data.name} - {props.data.level}
-      </h2>
+      </h3>
+      <p>Expertise:</p>
       {keywords}
-      <style jsx>{``}</style>
+      <style jsx>{`
+        div {
+          background: #70e4ef;
+          padding: 20px;
+          border: 3px solid black;
+          margin: 20px auto;
+        }
+      `}</style>
     </div>
   );
 };

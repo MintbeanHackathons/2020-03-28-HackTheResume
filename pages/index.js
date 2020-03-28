@@ -46,43 +46,39 @@ const Resume = () => {
         <title>Srikar Kalvakolanu - Resume</title>
       </Head>
       <Basics data={resume.basics} />
-      <hr />
       <h2>Work</h2>
-      <hr />
       {works}
-      <hr />
       <h2>Volunteer</h2>
-      <hr />
       {volunteers}
-      <hr />
       <h2>Education</h2>
-      <hr />
       {educations}
-      <hr />
       <h2>Awards</h2>
-      <hr />
       {awards}
-      <hr />
       <h2>Publications</h2>
-      <hr />
       {publications}
-      <hr />
       <h2>Skills</h2>
-      <hr />
       {skills}
-      <hr />
       <h2>Languages</h2>
-      <hr />
       {languages}
-      <hr />
       <h2>Interests</h2>
-      <hr />
       {interests}
-      <hr />
       <h2>References</h2>
-      <hr />
       {references}
-      <style jsx>{``}</style>
+      <style jsx>{`
+        div {
+          background: rgba(226, 239, 112, 0.4);
+          margin: 30px;
+          border: 3px solid #f038ff;
+          padding: 20px;
+        }
+        h2 {
+          margin: auto;
+          width: 35vw;
+          border: 3px solid black;
+          background: #7fa5ff;
+          text-align: center;
+        }
+      `}</style>
     </div>
   );
 };

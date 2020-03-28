@@ -3,10 +3,17 @@ import React from "react";
 const Languages = props => {
   return (
     <div>
-      <h2>
+      <h3>
         {props.data.language} - {props.data.fluency}
-      </h2>
-      <style jsx>{``}</style>
+      </h3>
+      <style jsx>{`
+        div {
+          background: #70e4ef;
+          padding: 20px;
+          border: 3px solid black;
+          margin: 20px auto;
+        }
+      `}</style>
     </div>
   );
 };
