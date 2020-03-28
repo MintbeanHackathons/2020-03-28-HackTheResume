@@ -175,8 +175,8 @@ resumeExperience.forEach((i)=>{
         </div>
         </div>
         <div class="summaries">
-            <p class="summary1">${summaryOne}</p>
-            <p class="summary2">${summaryTwo}</p>
+            <p class="summary1">• ${summaryOne}</p>
+            <p class="summary2">• ${summaryTwo}</p>
         </div>
     </div>
     `

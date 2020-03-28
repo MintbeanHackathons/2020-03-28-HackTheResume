@@ -107,6 +107,10 @@ p {
 }
 
 .skills .context {
+    width: 100%;
+}
+
+.skills .context {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -161,6 +165,14 @@ p {
     padding: 10px 0
 }
 
+.summary1 {
+    padding-bottom: 5px;
+}
+
 .experiences {
     padding-bottom: 40px;
+}
+
+hr {
+    border-top: 3px solid #93a1ae;
 }
