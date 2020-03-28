@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Education = (props) => {
-    console.log(props)
 
     const education = props.education.map(edu => {
         return(

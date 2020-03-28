@@ -135,7 +135,14 @@
         "Nature",
         "Exercise"
       ]
-    }],
+    }, {
+        "name": "Reading",
+        "keywords": [
+          "Books",
+          "Magazines"
+        ]
+    }
+],
     "references": [{
       "name": "Jane Doe",
       "reference": "Reference..."
