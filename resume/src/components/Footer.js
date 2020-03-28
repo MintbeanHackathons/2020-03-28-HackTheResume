@@ -1,8 +1,6 @@
 import React from 'react';
 
 const Footer = (props) => {
-    console.log(props)
-
     const awards = props.awards.map(item =>
         <div className="award">
             <div>{item.title} | {item.awarder} | {item.date}</div>
@@ -31,8 +29,8 @@ const Footer = (props) => {
             {awards ? <div> <h3>Awards</h3> {awards} </div> : null}
             {publications ? <div> <h3>Publications</h3> {publications} </div> : null}
             {references ? <div> <h3>References</h3> {references} </div> : null}
-            {languages ? <div> <div><span className="bold">Languages:</span> {languages} </div> </div> : null}
-            {interests ? <div> <div><span className="bold">Interests:</span> {interests} </div> </div> : null}
+            {languages ? <div> <h3>Languages:</h3> {languages} </div> : null}
+            {interests ? <div> <h3>Interests:</h3> {interests} </div> : null}
         </div>
     )
 }

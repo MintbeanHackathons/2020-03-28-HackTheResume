@@ -9,23 +9,25 @@ import data from './data/data.json';
 function App() {
   return (
     <div className="App">
-      <Header 
+      <Header
         basics={data.basics}
       />
-      <Sidebar 
-        basics={data.basics} 
-        skills={data.skills}
-      />
-      <Main 
-        work={data.work} 
-        volunteer={data.volunteer} 
-        education={data.education}
-      />
-      <Footer 
-        awards={data.awards} 
-        publications={data.publications} 
-        languages={data.languages} 
-        interests={data.interests} 
+      <div className="middle-container">
+        <Sidebar
+          basics={data.basics}
+          skills={data.skills}
+        />
+        <Main
+          work={data.work}
+          volunteer={data.volunteer}
+          education={data.education}
+        />
+      </div>
+      <Footer
+        awards={data.awards}
+        publications={data.publications}
+        languages={data.languages}
+        interests={data.interests}
         references={data.references}
       />
     </div>
