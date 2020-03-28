@@ -6,14 +6,14 @@ let my_resume = {
     email: "john@gmail.com",
     phone: "(912) 555-4321",
     website: "http://johndoe.com",
-    summary: "A summary of John Doe..."
-    // location: {
-    //   address: "2712 Broadway St",
-    //   postalCode: "CA 94115",
-    //   city: "San Francisco",
-    //   countryCode: "US",
-    //   region: "California"
-    // },
+    summary: "A summary of John Doe...",
+    location: {
+      address: "2712 Broadway St",
+      postalCode: "CA 94115",
+      city: "San Francisco",
+      countryCode: "US",
+      region: "California"
+    }
     // profiles: [
     //   {
     //     network: "Twitter",
@@ -114,7 +114,11 @@ let basicsList = document.createElement("ul");
 // iterate over basics and add to unordered list
 Object.keys(my_resume.basics).forEach(key => {
   var resumeEntry = document.createElement("li");
-  resumeEntry.innerText = my_resume.basics[key];
+  if (key == "location") {
+    resumeEntry.innerText = Object.values(my_resume.basics[key]);
+  } else {
+    resumeEntry.innerText = my_resume.basics[key];
+  }
   basicsList.appendChild(resumeEntry);
 });
 
