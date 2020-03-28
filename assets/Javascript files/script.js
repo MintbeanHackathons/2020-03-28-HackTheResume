@@ -37,37 +37,11 @@ function addData(tileId, resumeObject) {
 // Adds the work data to the work tile
 addData($("#work"), resume.work);
 // Adds volunteering data to the webpage
-var volunteerTile = $("#volunteering");
-var volunteerData = $("<ul>");
-for (let i of resume.volunteer) {
-  for (let j in i) {
-    var volunteerDataListElement = $("<li>");
-    volunteerDataListElement.text(j + ": " + i[j]);
-    volunteerData.append(volunteerDataListElement);
-  }
-  volunteerTile.append(volunteerData);
-}
+addData($("#volunteering"), resume.volunteer);
 // Adds education data to the webpage
-var educationTile = $("#education");
-var educationData = $("<ul>");
-for (let i of resume.education) {
-  for (let j in i) {
-    var educationDataListElement = $("<li>");
-    educationDataListElement.text(j + ": " + i[j]);
-    educationData.append(educationDataListElement);
-  }
-  educationTile.append(educationData);
-}
+addData($("#education"), resume.education);
 // Adds awards data to the webpage
-var awardsData = $("<ul>");
-for (let i of resume.awards) {
-  for (let j in i) {
-    var awardsDataListElement = $("<li>");
-    awardsDataListElement.text(j + ": " + i[j]);
-    awardsData.append(awardsDataListElement);
-  }
-  $("#awards").append(awardsData);
-}
+addData($("#awards"), resume.awards);
 // Adds publication data to the webpage
 addData($("#publications"), resume.publications);
 // Adds skills data to the webpage
