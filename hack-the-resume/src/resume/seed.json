@@ -1,0 +1,93 @@
+{
+  "basics": {
+    "name": "Juan Carrera",
+    "label": "Programmer",
+    "picture": "../resume/assets/profile-pic.jpg",
+    "email": "juankarrera@gmail.com",
+    "phone": "+1 (226) 203-0096",
+    "website": "http://jcarrera94.com",
+    "summary": "Avid and motivated learner for software-development with background in Engineering. Comfortable with stepping out of the comfort zone to learn and hone new skills, who doesn't mind change and a highly coachable person. Curious by nature who tends to ease the tension in the workplace through my catchy and synergetic personality!",
+    "location": {
+      "address": "3045 Queen Frederica Dr, unit 905",
+      "postalCode": "L4Y 3A2",
+      "city": "Mississauga",
+      "countryCode": "CA",
+      "region": "Ontario"
+    },
+    "profiles": [{
+      "network": "Linkedin",
+      "username": "Juan Carrera",
+      "url": "https://www.linkedin.com/in/juan-carrera/"
+    }]
+  },
+  "work": [{
+    "company": "Goal Canada",
+    "position": "Web Developer",
+    "website": "http://goal-canada.com",
+    "startDate": "2019-11-01",
+    "endDate": "current",
+    "summary": "Description...",
+    "highlights": [
+      "Started the company"
+    ]
+  }],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "website": "http://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description...",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [{
+    "institution": "University",
+    "area": "Software Development",
+    "studyType": "Bachelor",
+    "startDate": "2011-01-01",
+    "endDate": "2013-01-01",
+    "gpa": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "website": "http://publication.com",
+    "summary": "Description..."
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  }],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference..."
+  }]
+}
