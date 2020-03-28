@@ -3,6 +3,7 @@ import applicant from "../resume/applicant";
 import Basics from "./Basics";
 import WorkExperience from "./WorkExperience";
 import Volunteer from "./Volunteer";
+import Education from "./Education"
 
 const Resume = props => {
 	let { applicant } = props;
@@ -12,6 +13,7 @@ const Resume = props => {
 				<Basics applicant={applicant}></Basics>
         <WorkExperience applicant={applicant} />
         <Volunteer applicant={applicant} />
+        <Education applicant={applicant} />
 				{/* <ul></ul>
 					<li>{props.applicant.volunteer}</li>
 					<li>{props.applicant.education}</li>
