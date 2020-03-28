@@ -1,9 +1,8 @@
 import React from 'react';
-import data from '../data/data.json'
 
-const Contact = () => {
+const Contact = (props) => {
 
-    const { email, phone, website, profiles, location } = data.basics
+    const { email, phone, website, profiles, location } = props.basics
 
     return (
         <div className="contact-section">

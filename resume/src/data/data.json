@@ -66,15 +66,13 @@
         }
     ],
     "volunteer": [{
-      "organization": "Organization",
+      "organization": "Friends of Columbis Park",
       "position": "Volunteer",
       "website": "http://organization.com/",
       "startDate": "2012-01-01",
       "endDate": "2013-01-01",
       "summary": "Description...",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
-      ]
+      "highlights": []
     }],
     "education": [{
       "institution": "Syracuse University",

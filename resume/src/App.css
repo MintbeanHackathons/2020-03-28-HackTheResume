@@ -10,3 +10,11 @@ ul {
 .bold {
   font-weight: bold;
 }
+
+.work-bullets {
+  list-style-type: disc;
+  padding-inline-start: 40px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  text-align: left;
+}

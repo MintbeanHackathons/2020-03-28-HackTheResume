@@ -1,9 +1,8 @@
 import React from 'react';
-import data from '../data/data.json'
 
-const Header = () => {
+const Header = (props) => {
 
-    const { name, label, summary, picture} = data.basics
+    const { name, label, summary, picture} = props.basics
 
     return(
         <div className="header">

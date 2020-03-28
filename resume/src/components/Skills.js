@@ -1,9 +1,8 @@
 import React from 'react';
-import data from '../data/data.json'
 
-const Skills = () => {
+const Skills = (props) => {
 
-    const skills = data.skills.map(skill => {
+    const skills = props.skills.map(skill => {
         return (
         <div className="skill" key={skill.name}>
             <p><span className="bold">{skill.name}</span></p>

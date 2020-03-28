@@ -4,14 +4,30 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Main from './components/Main';
 import Footer from './components/Footer';
+import data from './data/data.json';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Sidebar />
-      <Main />
-      <Footer />
+      <Header 
+        basics={data.basics}
+      />
+      <Sidebar 
+        basics={data.basics} 
+        skills={data.skills}
+      />
+      <Main 
+        work={data.work} 
+        volunteer={data.volunteer} 
+        education={data.education}
+      />
+      <Footer 
+        awards={data.awards} 
+        publications={data.publications} 
+        languages={data.languages} 
+        interests={data.interests} 
+        references={data.references}
+      />
     </div>
   );
 }

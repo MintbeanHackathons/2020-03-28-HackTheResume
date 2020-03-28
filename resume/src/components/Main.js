@@ -1,10 +1,12 @@
 import React from 'react';
-import data from '../data/data.json'
+import Experience from './Experience';
+import Education from './Education';
 
-const Main = () => {
+const Main = (props) => {
     return(
         <div className="main">
-            Main
+            <Experience work={props.work} volunteer={props.volunteer}/>
+            <Education education={props.education}/>
         </div>
     )
 }

@@ -2,12 +2,12 @@ import React from 'react';
 import Contact from './Contact';
 import Skills from './Skills';
 
-const Sidebar = () => {
+const Sidebar = (props) => {
 
     return (
         <div className="sidebar">
-            <Contact />
-            <Skills />
+            <Contact basics={props.basics} />
+            <Skills skills={props.skills} />
         </div>
     )
 }
