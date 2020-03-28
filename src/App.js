@@ -14,9 +14,13 @@ function App() {
   const resumeData = resumeJson;
   return (
     <main className="App">
-      <h1>{resumeData.basics.name}</h1>
-      <span className="label">{resumeData.basics.label}</span>
-      <img src={resumeData.basics.picture} />
+      <header>
+        <div>
+          <h1>{resumeData.basics.name}</h1>
+          <span className="label">{resumeData.basics.label}</span>
+        </div>
+        <img src={resumeData.basics.picture} />
+      </header>
       <section className="contact-info">
         <h2>Contact Info</h2>
         <span className="email"><i class="far fa-envelope"></i> {resumeData.basics.email}</span>

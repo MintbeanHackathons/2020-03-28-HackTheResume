@@ -17,6 +17,16 @@ body {
   margin-inline-start: 30px;
 }
 
+.App header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App header img {
+  max-width: 150px;
+}
+
 .App h1 {
   font-size: 5rem;
   margin: 0;
