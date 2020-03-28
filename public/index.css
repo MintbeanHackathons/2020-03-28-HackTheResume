@@ -1,0 +1,15 @@
+.main-body{
+    display: grid;
+    grid-template-areas: "sidebar body";
+    grid-template-rows: 1fr;
+    grid-template-columns: 15rem 1fr;
+    margin: 2rem;
+}
+
+.body {
+    grid-area: body;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}

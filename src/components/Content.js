@@ -1,17 +1,16 @@
 import React from 'react'
 import Image from './Image'
-//import '../stylesheets/home.scss'
+import Card from 'react-bootstrap/Card'
 
-const Sidebar = () => {
+const Content = ({resume}) => {
     return(
-        <div className="sidebar">
-            <div className="profile">
-                <Image img = {}/>
-                <Contact/>
-                <Social/>
+        <Card className="body">
+            <Card.Header>Background</Card.Header>
+            <div className="about">
+                {resume.summary}
             </div>
-        </div>
+        </Card>
     )
 }
 
-export default Sidebar
+export default Content
