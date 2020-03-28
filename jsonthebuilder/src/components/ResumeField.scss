@@ -1,5 +1,5 @@
-@import "styles/mixins.scss";
-@import "styles/variables.scss";
+@import "../styles/mixins.scss";
+@import "../styles/variables.scss";
 
 .my-field {
   &__item {
@@ -31,3 +31,4 @@
       opacity: $inactive-opacity;
     }
   }
+}

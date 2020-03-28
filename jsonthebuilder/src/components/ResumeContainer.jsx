@@ -12,13 +12,13 @@ export default function ResumeContainer() {
 
   return (
     <>
-      <h1>This is where your resume goes</h1>
+      <h1>My Resume</h1>
       {obj.map(info => (
         <ResumeField
-        key={info.basics}
         name={info.basics.name}
         label={info.basics.label}
         email={info.basics.email}
+        website={info.basics.website}
         />
       ))}
     </>
