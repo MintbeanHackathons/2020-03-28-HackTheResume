@@ -1,0 +1,31 @@
+.content-body {
+  width: 80%;
+  background-color: bisque;
+  margin: auto;
+  padding: 5vw;
+}
+
+img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.basics > h1 {
+  margin-bottom: 0px;
+}
+.contact {
+  margin: 3px 0px 3px 0px;
+}
+button {
+  background-color: lightgray;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8%;
+  border-color: 1px solid black;
+}
+p{
+  margin: 4px 0px 3px 4px;
+}
+h4 {
+  margin-bottom: 10px;
+}
