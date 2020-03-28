@@ -1,5 +1,8 @@
 # Today's Objective: Hack the Résumé
 
+## Submission
+https://eloquent-keller-4fe4f3.netlify.com/
+
 ## Prize
 
 $25 CAD Amazon gift card + bragging rights.
