@@ -1,11 +1,36 @@
-const fs = require('fs');
+const readresume = require('./read-schema')
 
-fs.readFile(`./schema.json`, 'utf8', (error, data) => {
-  console.log("In readFile's Callback: it has the data.");
-  // ISSUE: Returning from *inner* callback function, not breedDetailsFromFile.
-  if (error) {
-    console.log("File read failed:", error)
-    return
-  }
-  console.log('File data:', data)
+const buildResume = function (resumeObject) {
+  const parsedData = JSON.parse(resumeObject)
+  const basics = parsedData["basics"];
+  const name = basics["name"];
+  const label = basics["label"];
+  const email = basics["email"];
+  const markup = `
+    <span>
+      ${name}
+    </span>
+    <div>
+      ${label}
+    </div>
+    <div>
+      ${email}
+    </div>
+
+  `;
+  return markup;
+};
+const renderResume = function (resume) {
+  const $section = buildResume(resume);
+  $('#build-resume').prepend($section);
+};
+
+jQuery(function ($) {
+  const loadResume = function () {
+    $.ajax({
+      success: function (resume) {
+        renderResume(resume);
+      }
+    });
+  };
 });
