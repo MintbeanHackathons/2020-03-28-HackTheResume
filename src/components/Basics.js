@@ -1,12 +1,13 @@
 import React from 'react';
+import generateKey from '@tammiec/generatekey';
 
 const Basics = ({ data, ...props }) => {
 
   const profiles = data.profiles.map(profile => (
-    <>
+    <div key={generateKey()}>
       <h3>{profile.network}</h3>
       <a href={profile.url}>{profile.username}</a>
-    </>
+    </div>
   ));
 
   return (
