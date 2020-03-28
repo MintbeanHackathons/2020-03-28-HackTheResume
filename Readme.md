@@ -1,3 +1,5 @@
+Live demo: http://lcp-hacktheresume.surge.sh/
+
 # Today's Objective: Hack the Résumé
 
 ## Prize
