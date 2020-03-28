@@ -140,10 +140,9 @@ $(function () {
     $('.profileSummary').html(`<p>${candidateSummary}</p>`)
 
     // Iterating Education array containing object 
-    const edu = resumeData.education.forEach((eduData) => {
+    const edu = resumeData.education.map((eduData) => {
         console.log(eduData);
-
-
-    })
+        return eduData
+    })    
 
 });
