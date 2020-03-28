@@ -1,0 +1,12 @@
+.Language {
+  margin-left: 15px;
+}
+
+.Language span {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.Language .language {
+  font-size: 1.5rem;
+}

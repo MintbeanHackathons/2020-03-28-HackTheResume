@@ -6,13 +6,11 @@ function Interest(props) {
     <div className="Interest">
       <span className="name">{props.name}</span>
       {props.keywords.length &&
-        <>
-          <ul className="keywords">
+          <div className="keywords">
             {props.keywords.map((keyword, index) => {
-              return <li key={index}>{keyword}</li>
+              return <span class="keyword" key={index}><i>#{keyword}</i>&nbsp;</span>
             })}
-          </ul>
-        </>
+          </div>
       }
     </div>
   );

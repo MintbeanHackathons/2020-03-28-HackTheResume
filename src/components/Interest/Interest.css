@@ -1,0 +1,17 @@
+.Interest {
+  margin-left: 15px;
+}
+
+.Interest span {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.Interest .name {
+  font-size: 1.5rem;
+}
+
+.Interest .keyword {
+  color: grey;
+  display: inline-block;
+}
