@@ -10,7 +10,9 @@ export default function ResumeField(props) {
       {props.name}{<br></br>}
       {props.label}{<br></br>}
       {props.email}{<br></br>}
-      {props.website}
+      {props.website}{<br></br>}
+      {props.location.city}, {props.location.region}{<br></br>}
+      {props.work}
     </li>
   )
 }

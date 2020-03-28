@@ -19,6 +19,8 @@ export default function ResumeContainer() {
         label={info.basics.label}
         email={info.basics.email}
         website={info.basics.website}
+        location={info.basics.location}
+        work={info.work[0].company}
         />
       ))}
     </>
