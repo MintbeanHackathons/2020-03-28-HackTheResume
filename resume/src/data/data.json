@@ -1,0 +1,134 @@
+{
+    "basics": {
+      "name": "Jennifer Gong",
+      "label": "Software Engineer",
+      "picture": "",
+      "email": "test@gmail.com",
+      "phone": "(912) 555-4321",
+      "website": "https://jennifergong.com",
+      "summary": "Diligent and detail-oriented software developer with a strong background in digital marketing and a passion for creating engaging user experiences.",
+      "location": {
+        "address": "2712 Broadway St",
+        "postalCode": "NY 94115",
+        "city": "New York",
+        "countryCode": "US",
+        "region": "New York"
+      },
+      "profiles": [
+        {
+            "network": "LinkedIn",
+            "username": "jngong",
+            "url": "https://www.linkedin.com/in/jngong/"
+        }, 
+        {
+            "network": "Github",
+            "username": "jngong",
+            "url": "https://github.com/jngong"
+        }
+    
+    ]},
+    "work": [
+        {
+            "company": "General Assembly",
+            "position": "Software Engineering Immersive Fellow",
+            "website": "http://company.com",
+            "startDate": "2019-12-10",
+            "endDate": "2020-03-13",
+            "summary": "Full-time fellow in an accelerated, 3-month software engineering program, gaining practical experience and fluency in key programming languages, frameworks and libraries.",
+            "highlights": [
+                "Gained solid knowledge of algorithms, data structures, databases, MVC pattern design and object-oriented programming", 
+                "Designed interactive, responsive applications with  HTML, CSS, Javascript, React and third-party API integrations",
+                "Developed full-stack applications and designed REST APIs with full CRUD functionality using React, Sequelize, Node.js, Express.js, PostgreSQL and Ruby on Rails",
+                "Managed team-based web development projects using agile workflow, Trello and Github"]
+        },
+        {
+            "company": "Mercer",
+            "position": "Senior Content Marketing Manager",
+            "website": "http://company.com",
+            "startDate": "2015-12-10",
+            "endDate": "2019-03-13",
+            "summary": "Led strategic planning and execution of key demand generation marketing campaigns for the US Career business.",
+            "highlights": [
+                "Transitioned from field marketing to content marketing within two years, expanding leadership role and influence on core go-to-market business strategy",
+                "Managed external agencies and collaborated with cross-functional partners in PR, digital marketing, and technology to execute fully integrated content-based campaigns",
+                "Led field marketing strategy and delivery of 180+ activities across 13 sub-markets over one year"]
+        },
+        {
+            "company": "S&P Capital IQ",
+            "position": "Senior Marketing Manager",
+            "website": "http://company.com",
+            "startDate": "2007-12-10",
+            "endDate": "2015-03-13",
+            "summary": "Led marketing strategy and planning for high-priority market segments, managed budgets and managed teams.",
+            "highlights": [
+                "Promoted four times over eight years from Specialist through to Associate Director for exceeding business goals and demonstrating strong leadership and collaboration skills",
+                "Coached and supervised team members, managed budgets and led strategic marketing planning for key market segments",
+                "Built an integrated lead management system and implemented new reporting process through Salesforce and Eloqua to improve tracking of marketing results"]            
+        }
+    ],
+    "volunteer": [{
+      "organization": "Organization",
+      "position": "Volunteer",
+      "website": "http://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description...",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }],
+    "education": [{
+      "institution": "Syracuse University",
+      "area": "Journalism",
+      "studyType": "Bachelors Degress",
+      "startDate": "2003-01-01",
+      "endDate": "2007-01-01",
+      "gpa": "",
+      "courses": [
+        ""
+      ]
+    }],
+    "awards": [{
+      "title": "President’s Circle Award for Marketer of the Year, EMEA",
+      "date": "2011-11-01",
+      "awarder": "S&P Capital IQ",
+      "summary": "Marketer of the year"
+    }],
+    "publications": [{
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "website": "http://publication.com",
+      "summary": "Description..."
+    }],
+    "skills": [{
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "Ruby",
+        "Rails",
+        "NodeJS",
+        "ExpressJS",
+        "PostgreSQL"
+      ]
+    }],
+    "languages": [{
+      "language": "English",
+      "fluency": "Native speaker"
+    }],
+    "interests": [{
+      "name": "Hiking",
+      "keywords": [
+        "Nature",
+        "Exercise"
+      ]
+    }],
+    "references": [{
+      "name": "Jane Doe",
+      "reference": "Reference..."
+    }]
+  }
