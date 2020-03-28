@@ -1,6 +1,8 @@
 import React from 'react';
 import generateKey from '@tammiec/generatekey';
 
+import './Experience.scss';
+
 const Experience = ({ data, type, orgType, title, ...props }) => {
 
   const experience = data.map(exp => {
@@ -11,9 +13,9 @@ const Experience = ({ data, type, orgType, title, ...props }) => {
 
     return (
       <div key={generateKey()}>
-        <h3>{data[orgType]}</h3>
-        <p>{position} | {exp.startDate} - {exp.endDate}</p>
+        <h3>{exp[orgType]}</h3>
         {type !== 'education' && <a href={exp.website}>{exp.website}</a>}
+        <p><span>{position}</span> | {exp.startDate} - {exp.endDate}</p>
         <p>{summary}</p>
         <ul>
           {exp[listItems].map(item => <li key={generateKey()}>{item}</li>)}
@@ -25,7 +27,9 @@ const Experience = ({ data, type, orgType, title, ...props }) => {
   return (
     <div className='experience-container'>
       <h2>{title}</h2>
-      {experience}
+      <div className='experience-item'>
+        {experience}
+      </div>
     </div>
   );
 };

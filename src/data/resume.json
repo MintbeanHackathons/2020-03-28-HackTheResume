@@ -20,7 +20,8 @@
       "url": "http://twitter.com/john"
     }]
   },
-  "work": [{
+  "work": [
+    {
     "company": "Company",
     "position": "President",
     "website": "http://company.com",
@@ -30,7 +31,19 @@
     "highlights": [
       "Started the company"
     ]
-  }],
+    },
+    {
+      "company": "Company2",
+      "position": "sdfsd",
+      "website": "http://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Description...",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
   "volunteer": [{
     "organization": "Organization",
     "position": "Volunteer",

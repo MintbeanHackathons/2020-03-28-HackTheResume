@@ -1,0 +1,24 @@
+.experience-container {
+  width: 100%;
+}
+
+.experience-item {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+
+  div {
+    flex-basis: 50%;
+
+    h3 {
+      margin-top: 0.25em;
+    }
+  
+    span {
+      font-weight: 600;
+    }
+  }
+}
