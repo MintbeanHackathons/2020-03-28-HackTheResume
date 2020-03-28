@@ -1,8 +1,10 @@
 # Today's Objective: Hack the Résumé
 
+[My submission is located at https://drydenje.github.io/2020-03-28-HackTheResume/](https://drydenje.github.io/2020-03-28-HackTheResume/)
+
 ## Prize
 
-$25 CAD Amazon gift card + bragging rights.
+\$25 CAD Amazon gift card + bragging rights.
 
 Tip: Read [General Information.md]("./General Information.md") for more info on how to get started and submit.
 
@@ -12,20 +14,22 @@ Today, we will build a project where we take [JSON Resume](https://jsonresume.or
 
 Take a look at the [JSON Resume Schema](https://jsonresume.org/schema/). Your goal is to take these fields, then build a resume using these fields.
 
-You may either (a) display the output immediately, OR (b) save it to a file. 
+You may either (a) display the output immediately, OR (b) save it to a file.
 
-Required: 
-* You  must output a resume based on JSON Resume fields
-* Your resume must support all JSON Resume schema fields
+Required:
+
+- You must output a resume based on JSON Resume fields
+- Your resume must support all JSON Resume schema fields
 
 You may use any GUI technology you wish:
-* Templated HTML
-* React
-* Vue
-* Angular
-* Express
-* Electron
-* CLI (yes, you can make this a terminal-only project)
+
+- Templated HTML
+- React
+- Vue
+- Angular
+- Express
+- Electron
+- CLI (yes, you can make this a terminal-only project)
 
 ## Restrictions
 
