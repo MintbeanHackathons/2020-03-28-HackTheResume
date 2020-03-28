@@ -26,9 +26,11 @@ const resumeJSON = JSON.stringify({
     "website": "http://company.com",
     "startDate": "2013/01/01",
     "endDate": "2014/01/01",
-    "summary": "Description...",
+    "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
     "highlights": [
-      "Started the company"
+      "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
+      "Successfully won Techcrunch Disrupt",
+      "Optimized an algorithm that holds the current world record for Weisman Scores"
     ]
   }],
   "volunteer": [{

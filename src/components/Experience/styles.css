@@ -19,3 +19,11 @@
   font-size: 22px;
   font-weight: bold;
 }
+
+.summary {
+  padding-bottom: 20px;
+}
+
+.highlightsContainer {
+  padding-bottom: 20px;
+}

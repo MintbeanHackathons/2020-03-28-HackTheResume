@@ -18,6 +18,7 @@ function App() {
         <Introduction basics={resume.basics} />
         <Divider />
         <Experience work={resume.work} />
+        <Divider />
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ const Introduction = ({ basics }) => {
     {
       image: websiteIcon,
       alt: "website",
-      display: basics.website
+      display: <a href={basics.website}>{basics.website}</a>
     },
     {
       image: emailIcon,
