@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.work>header {
+  display: flex;
+  flex-direction: column;
+}
+
+.work>header>span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
