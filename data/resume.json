@@ -1,0 +1,154 @@
+{
+  "basics": {
+    "name": "Asha Misra",
+    "label": "Software Engineer",
+    "email": "aafmisra@gmail.com",
+    "phone": "(703)554-5592",
+    "website": "http://aafmisra.github.io",
+    "summary": "Software engineer seeking a role where I can apply my creativity and attention to detail toward building software that enriches peoples' lives. With experience developing zoo and museum exhibitions, I think like a user and make elegant, efficient, and effective products.",
+    "location": {
+      "city": "Providence",
+      "region": "Rhode Island"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "asha-misra",
+        "url": "http://linkedin.com/in/asha-misra"
+      },
+      {
+        "network": "GitHub",
+        "username": "aafmisra",
+        "url": "https://github.com/aafmisra"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "General Assembly",
+      "position": "Software Engineer Immersive Fellow",
+      "website": "http://generalassemb.ly",
+      "startDate": "2019-12-09",
+      "endDate": "2020-03-13",
+      "summary": "Currently training as a full-stack developer in General Assembly's 12-week Software Engineering Immersive program, covering HTML, CSS, JavaScript, ReactJS, Node, MongoDB, Express, SQL, Python, and Django",
+      "highlights": [
+        "Fieldwork Flashcards, an educational game built with HTML, CSS, JavaScript, and EoL and GBIF APIs (https://aafmisra.github.io/fieldwork-flashcards)",
+        "Rapid Recipe, a web app that allows users to search recipes by ingredients, built with ReactJS and Edamam Recipe Search API, deployed with Heroku (https://rapid-recipe.herokuapp.com)",
+        "BookBear, a digital TBR pile. MERN stack with full CRUD capability. I acted as project manager on a team with three of my cohort-mates. Deployed to Heroku and Atlas (https://book-bear.herokuapp.com/books)",
+        "What Cheer, a digital daily gratitude journal with a React frontend and Python/Django API backend, featuring JWT for user authentication. I was project manager for this two-person team. Deployed to Heroku (https://what-cheer.herokuapp.com)"
+      ]
+    },
+    {
+      "company": "Experience Design",
+      "position": "Museum Exhibition Content Developer and Interpretive Writer",
+      "website": "http://expstudios.org",
+      "startDate": "2018-02-01",
+      "endDate": "2018-11-02",
+      "summary": "Developed exhibit content, conducted visitor studies, and designed interpretive plans for 9 museum and corporate clients. Maintained strong rapport with clients throughout the planning, design, and fabrication process. Implemented processes for version control to keep content organized through many iterations.",
+      "highlights": [
+        "National Grid",
+        "Martha's Vineyard Museum",
+        "Blackstone Valley National Heritage Corridor Visitor Center"
+      ]
+    },
+    {
+      "company": "Roger Williams Park Zoo",
+      "position": "Education Program Registrar",
+      "website": "http://rwpzoo.org",
+      "startDate": "2015-11-01",
+      "endDate": "2018-01-31",
+      "summary": "Managed Altru and Doubleknot registration software for hundreds of educational programs, ensuring that thousands of people could experience these programs each year",
+      "highlights": [
+        "Migrated complex program registrations from Doubleknot to Altru",
+        "Developed automated roster creation system using Altru and Excel Powerpivot, saving the department 8 hours of work per week",
+        "As department liaison, I communicated with other departments and represented the Education team on many zoowide projects"
+      ]
+    },
+    {
+      "company": "Roger Williams Park Zoo",
+      "position": "Interpretation Intern and WildBunch Lead",
+      "website": "http://rwpzoo.org",
+      "startDate": "2013-01-01",
+      "endDate": "2015-10-31",
+      "summary": "Aided the Manager of Interpretation and Graphics, which included assisting with exhibit development and supervising a team of live interpreters",
+      "highlights": [
+        "Facilitated animal interactions with zoo visitors: seal and giraffe feedings, live animal presentations",
+        "Oversaw the team of live interpreters: coordinated schedules, and resolved issues between coworkers, animals, and zoo visitors"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "General Assembly",
+      "area": "Software Engineering",
+      "studyType": "Certificate",
+      "endDate": "2020-03-13"
+    },
+    {
+      "institution": "Harvard University",
+      "area": "Museum Studies",
+      "studyType": "Master of Liberal Arts",
+      "endDate": "2017-12-01"
+    },
+    {
+      "institution": "University of Rhode Island",
+      "area": "Wildlife and Conservation Biology",
+      "studyType": "Bachelor of Science",
+      "endDate": "2013-05-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Front-End",
+      "keywords": ["HTML", "CSS", "JavaScript", "React"]
+    },
+    {
+      "name": "Back-End",
+      "keywords": [
+        "Node",
+        "NoSQL/MongoDB",
+        "Express",
+        "Python",
+        "Django",
+        "Postgres/SQL",
+        "RESTful APIs"
+      ]
+    },
+    {
+      "name": "Project Development",
+      "keywords": [
+        "wireframing",
+        "pseudocode",
+        "user experience planning",
+        "git and GitHub",
+        "code comments and documentation",
+        "Agile/Scrum",
+        "Testing: Jest, Mocha, Chai",
+        "monolithic and microservices architecture"
+      ]
+    },
+    {
+      "name": "Communication",
+      "keywords": [
+        "verbal, non-verbal, and written communication",
+        "phone calls and emails",
+        "presentations and public speaking",
+        "active listening",
+        "collaboration",
+        "empathy",
+        "open-mindedness"
+      ]
+    },
+    {
+      "name": "General",
+      "keywords": [
+        "project management",
+        "working on a team",
+        "adaptability",
+        "multi-tasking",
+        "problem solving",
+        "teaching"
+      ]
+    }
+  ]
+}
