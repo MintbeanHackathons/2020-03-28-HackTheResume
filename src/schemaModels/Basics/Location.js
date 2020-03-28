@@ -7,6 +7,10 @@ class Location {
     this.region = region
   }
 
+  forDisplay() {
+    return `${this.address}, ${this.city}, ${this.postalCode}`
+  }
+
   static from(data) {
     const { address, postalCode, city, countryCode, region } = data
 
