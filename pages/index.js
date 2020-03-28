@@ -43,7 +43,8 @@ const Resume = () => {
   return (
     <div>
       <Head>
-        <title>Srikar Kalvakolanu - Resume</title>
+        <title>{resume.basics.name} - Resume</title>
+        <link rel="icon" href="/portfolio.png" />
       </Head>
       <Basics data={resume.basics} />
       <h2>Work</h2>
