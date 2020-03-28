@@ -6,11 +6,11 @@ import applicant from './resume/applicant'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header"> */}
         <>
-        <Resume />
+        <Resume applicant={applicant} />
         </>
-      </header>
+      {/* </header> */}
     </div>
   );
 }
