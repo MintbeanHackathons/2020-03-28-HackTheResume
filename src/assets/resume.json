@@ -1,0 +1,159 @@
+{
+  "basics": {
+    "name": "Derek Johnston",
+    "label": "Software Developer",
+    "image": "",
+    "email": "Derek@DerekJohnston.ca",
+    "phone": "1.555.555.5555",
+    "url": "https://DerekJohnston.ca",
+    "summary": "Well organized, creative, and a proven professional software developer.  Experience working with remote and local development teams.  Long term interests in computers, initially sparked by my mother working in a computer repair shop, where I attended a summer boot camp as a child. Interests furthered then by my father working as a Bell 2.5 level support technician.",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "john",
+        "url": "http://twitter.com/john"
+      },
+      {
+        "network": "Github",
+        "username": "DerekJJ",
+        "url": "http://github.com/derekjj"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "john",
+        "url": "http://LinkedIn.com/DerekJJohnston"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Company",
+      "position": "President",
+      "website": "http://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Description...",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "company": "Company2",
+      "position": "President",
+      "website": "http://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Description...",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "website": "http://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description...",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    },
+    {
+      "organization": "Organization2",
+      "position": "Volunteer",
+      "website": "http://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description...",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "gpa": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL",
+        "DB1201 - Advanced SQL",
+        "PROG101 - Programming 101"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    },
+    {
+      "title": "Award2",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    },
+    {
+      "title": "Award3",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "website": "http://publication.com",
+      "summary": "Description..."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference..."
+    }
+  ]
+}
