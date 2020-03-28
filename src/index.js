@@ -1,7 +1,3 @@
-// import "./styles.css";
-// import menu from "./menu";
-// import $ from "jquery";
-
 const sample = {
 
   "basics": {
@@ -30,10 +26,21 @@ const sample = {
     "position": "President",
     "website": "http://company.com",
     "startDate": "2013-01-01",
-    "endDate": "2014-01-01",
+    "endDate": "",
     "summary": "Description...",
     "highlights": [
       "Started the company"
+    ]
+  },
+  {
+    "company": "CompanyB",
+    "position": "VP of Operation",
+    "website": "http://companyB.com",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Some info...",
+    "highlights": [
+      "Created awesomeness"
     ]
   }],
   "volunteer": [{
@@ -98,113 +105,58 @@ const sample = {
 
 }
 
-/**
- * Return updated acc object
- * @param  {Object} acc an object with key as section and value as list of item objects
- * @param  {Object} curr current item object to be added to acc
- */
-const organizeItems = (acc, curr) => {
-  if (acc[curr.type]) {
-    acc[curr.type].push(curr);
-    // sort items by menuOrder as it gets added to section
-    acc[curr.type].sort((a, b) => {
-      if (a.menuOrder < b.menuOrder) {
-        return -1;
-      } else if (a.menuOrder > b.menuOrder) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
-  } else {
-    acc[curr.type] = [curr];
+const createWorkItem = (work) => {
+  const highlights = [`<li>${work.summary}</li`];
+
+  for (const highlight of work.highlights) {
+    highlights.push(`<li> ${highlight} </li>`);
   }
-  return acc;
-};
-
-/**
- * Create an item element for rendering
- * @param  {Object} item A menu item object
- */
-const createItemElement = item => {
-  // Create container
-  const $container = $("<article>").addClass("item-container");
-
-  // Create header
-  const $header = $("<header>").addClass("item-header");
-  // indicate in name whether item is spicy or not
-  const $name = $("<div>")
-    .addClass(`${item.spicy ? "item-name spicy" : "item-name"}`)
-    .append(item.name);
-  const $price = $("<div>")
-    .addClass("item-price")
-    .append(`$${item.price.toFixed(2)}`);
-  $header.append($name, $price);
-
-  // Create description
-  const $desc = $("<p>")
-    .addClass("item-desc")
-    .append(item.description);
-
-  // Add header and description to item container
-  $container.append($header, $desc);
-  return $container;
-};
-
-/**
- * Render the items by section
- * @param  {Object} itemsBySection An object where keys are sections and values are corresponding items
- */
-const renderItems = itemsBySection => {
-  for (const section in itemsBySection) {
-    for (const item of itemsBySection[section]) {
-      $(`#${section}`).append(createItemElement(item));
-    }
-  }
-};
-
-/**
- * Remove all items from each section
- * @param  {sectionName:[items]} itemsBySection Menu items by section
- */
-const deleteItems = itemsBySection => {
-  for (const section in itemsBySection) {
-    $(`#${section} > article`).remove();
-  }
-};
-
-// Load items after applying filters
-const loadItems = filters => {
-  let menuItems = menu.items;
-  let spicyStatus = filters.spicy;
-
-  // Filter menu items
-  menuItems = menuItems.filter(item => {
-    // retain all items when spicy is selected
-    // or show non-spicy items when spicy is not selected
-    if (spicyStatus) {
-      return true;
-    } else if (!spicyStatus && !item.spicy) {
-      return true;
-    } else {
-      return false;
-    }
-  });
-
-  // Get items organized by sections
-  const itemsBySection = menuItems.reduce(organizeItems, {});
-
-  // Remove old item list before adding updated item list
-  deleteItems(itemsBySection);
-  renderItems(itemsBySection);
-};
+  console.log(highlights.join(" "));
+  return `
+    <article class="work">
+      <header> 
+        <span> ${work.company? work.company: work.organization} </span>
+        <span> <span>${work.position.toUpperCase()} </span> <span> ${work.startDate} to ${work.endDate? work.endDate : "present"} </span> </span>
+      </header>
+      <div class="description">
+        <ul>
+          ${highlights.join("")}
+        </ul>
+      </div> 
+    </article>
+  `
+}
 
 if (sample.basics) {
   $("header").append(`<h1> ${sample.basics.name}</h1`);
-  $("header").append(`<h2>${sample.basics.label}</h2>`);
-  if(sample.basics.picture) {
+  $("header").append(`<p>${sample.basics.label}</p>`);
+  if (sample.basics.picture) {
     $("header").append(`<img src=${sample.basics.picture} alt="picture">`);
   }
+  $("#summary").append(`
+    <h2> Summary </h2>
+    <p>${sample.basics.summary}</p>
+    `);
+  $("#contact-details").append(`
+    <h2> Contact Details </h2>
+    ${sample.basics.phone ? `<p> Telephone: ${sample.basics.phone}</p>` : ""} 
+    ${sample.basics.website ? `<p> Website: ${sample.basics.website}</p>` : ""} 
+    <p> ${sample.basics.location.address} </p>
+    <p> ${sample.basics.location.city}, ${sample.basics.location.region}, ${sample.basics.location.countryCode} </p>
+    <p> ${sample.basics.location.postalCode} </p>
+    `
+  )
+}
+
+$("#work").append(`<h2> Employment History </h2>`);
+for (const work of sample.work) {
+  $("#work").append(createWorkItem(work));
+}
+
+$("#volunteer").append(`<h2> Volunteer </h2`);
+for (const volunteer of sample.volunteer) {
+  $("#volunteer").append(createWorkItem(volunteer));
 }
 $("#education").append(`<p>hello</p>`);
 console.log(sample);
+
