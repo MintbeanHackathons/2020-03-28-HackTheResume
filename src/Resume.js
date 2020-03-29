@@ -1,10 +1,8 @@
 import React, {Fragment} from 'react';
 import './App.css';
-import { useHistory } from "react-router-dom";
 
 
 export default function DataEntry(props) {
-    let history = useHistory();
     let resume = props.location.state.resume;
   return (
     <div className='resume'>
