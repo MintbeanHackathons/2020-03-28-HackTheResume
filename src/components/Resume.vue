@@ -12,13 +12,13 @@
       .col-12 {{resume.basics.label}}
     .row#basics
       .col-md-4 
-        a(href="resume.basics.email") {{resume.basics.email}}
+        a(:href="'mailto:'+resume.basics.email") {{resume.basics.email}}
       .col-md-4 {{resume.basics.phone}}
       .col-md-4 
-        a(href="resume.basics.url") {{resume.basics.url}}
+        a(:href="resume.basics.url") {{resume.basics.url}}
     .row#profiles
       .col-md-4(v-for="(profile,index) in resume.basics.profiles")
-        a(href="profile.url") {{profile.url}}
+        a(:href="profile.url") {{profile.url}}
     .row#location
       .col-md-4 {{resume.basics.location.address}}
       .col-md-4 {{resume.basics.location.city}}
@@ -36,7 +36,7 @@
             h6 {{work.startDate}} - {{work.endDate}}
           .col-md-6.text-left {{work.position}}
           .col-md-6.text-right
-            a(href="work.website") {{work.website}}
+            a(:href="work.website") {{work.website}}
           .col-12.text-left {{work.summary}}
           .col-md-4(v-for="(highlight, index) in work.highlights")
             | {{highlight}}
@@ -51,7 +51,7 @@
             h6 {{volunteer.startDate}} - {{volunteer.endDate}}
           .col-md-6.text-left {{volunteer.position}}
           .col-md-6.text-right
-            a(href="volunteer.website") {{volunteer.website}}
+            a(:href="volunteer.website") {{volunteer.website}}
           .col-12.text-left {{volunteer.summary}}
           .col-6(v-for="(highlight, index) in volunteer.highlights")
             | {{highlight}}
