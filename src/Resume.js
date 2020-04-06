@@ -105,7 +105,24 @@ export default function DataEntry(props) {
         ))
       }
     </div>
-
+    <br></br>
+    <div className="section">
+      <h2><strong>Publications</strong></h2>
+      {
+        publications.map((publication,index)=>(
+        <div key={index}>
+          <p>Title: {publication.name}</p>
+          <p>Publisher: {publication.publisher}</p>
+          <p>Release Date: {publication.releaseDate}</p>
+          <p>Website: <a href={publication.website}>{publication.website}</a></p>
+          <p><u>Summary</u></p>
+          <p>{publication.summary}</p>
+        </div>
+        ))
+      }
+    </div>
+    <br></br>
+    
   </div>
 
   )
