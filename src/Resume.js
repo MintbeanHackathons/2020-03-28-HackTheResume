@@ -4,10 +4,9 @@ import './App.css';
 
 export default function DataEntry(props) {
     const resume = props.location.state.resume;
-    const {name, label, email, phone, summary} = resume.basics;
-    const {address, city, region, countryCode, postalCode} = resume.basics.location;
-    const profiles = resume.basics.profiles;
     const {work, volunteer, education, awards, skills, publications, interests, references, languages} = resume;
+    const {name, label, email, phone, summary, profiles} = resume.basics;
+    const {address, city, region, countryCode, postalCode} = resume.basics.location;
 
   return (
   <div>
@@ -77,10 +76,9 @@ export default function DataEntry(props) {
         education.map((school, index)=>(
           <div key={index}>
             <p>Institution: {school.institution}</p>
+            <p>({school.startDate} to {school.endDate}) </p>
             <p>Area of Study: {school.area}</p>
             <p>Degree Earned: {school.studyType}</p>
-            <p>Start Date: {school.startDate}</p>
-            <p>End Date: {school.endDate}</p>
             <p>GPA: {school.gpa}</p>
             <p><u>Courses</u></p>
             {school.courses.map((course, index)=>(

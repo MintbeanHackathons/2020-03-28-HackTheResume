@@ -20,7 +20,7 @@
 .header{
   display:flex;
   justify-content: space-between;
-  padding-right: 1em;
+  padding-right: 2em;
 }
 
 .header p{
@@ -29,14 +29,13 @@
 
 .accomplishments{
   display:flex;
-  justify-content: space-evenly;
-  padding-right: 2em;
+  justify-content: flex-start;
 }
 
 .supplement{
   display:flex;
   justify-content: space-between;
-  padding-right: 2em;
+  padding-right: 8em;
 }
 
 .App-logo {
