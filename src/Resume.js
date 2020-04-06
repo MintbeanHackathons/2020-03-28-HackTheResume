@@ -138,6 +138,19 @@ export default function DataEntry(props) {
       }
     </div>
     <br></br>
+    <div className="section">
+      <h2><strong>Languages</strong></h2>
+      {
+        languages.map((language,index)=>(
+        <div key={index}>
+          <p>Language: {language.language}</p>
+          <p>Proficiency: {language.fluency}</p>
+        </div>
+        ))
+      }
+    </div>
+    <br></br>
+
 
   </div>
 
