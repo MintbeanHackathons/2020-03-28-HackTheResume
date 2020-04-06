@@ -7,7 +7,7 @@ export default function DataEntry(props) {
     const {name, label, email, phone, summary} = resume.basics;
     const {address, city, region, countryCode, postalCode} = resume.basics.location;
     const profiles = resume.basics.profiles;
-    const {work, volunteer, education, awards, skills, publications, references, languages} = resume;
+    const {work, volunteer, education, awards, skills, publications, interests, references, languages} = resume;
 
   return (
   <div>
@@ -150,7 +150,21 @@ export default function DataEntry(props) {
       }
     </div>
     <br></br>
-
+    <div className="section">
+      <h2><strong>Interests</strong></h2>
+      {
+        interests.map((interest,index)=>(
+        <div key={index}>
+          <p>Name: {interest.name}</p>
+          <p><u>Keywords</u></p>
+            {interest.keywords.map((keyword, index)=>(
+              <li key={index}>{keyword}</li>
+            ))}
+        </div>
+        ))
+      }
+    </div>
+    <br></br>
 
   </div>
 
