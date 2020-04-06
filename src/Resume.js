@@ -122,7 +122,23 @@ export default function DataEntry(props) {
       }
     </div>
     <br></br>
-    
+    <div className="section">
+      <h2><strong>Skills</strong></h2>
+      {
+        skills.map((skill,index)=>(
+        <div key={index}>
+          <p>Name: {skill.name}</p>
+          <p>Level: {skill.level}</p>
+          <p><u>Keywords</u></p>
+            {skill.keywords.map((keyword, index)=>(
+              <li key={index}>{keyword}</li>
+            ))}
+        </div>
+        ))
+      }
+    </div>
+    <br></br>
+
   </div>
 
   )
