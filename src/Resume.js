@@ -165,7 +165,18 @@ export default function DataEntry(props) {
       }
     </div>
     <br></br>
-
+    <div className="section">
+      <h2><strong>References</strong></h2>
+      {
+        references.map((reference,index)=>(
+        <div key={index}>
+          <p>Name: {reference.name}</p>
+          <p>Reference: {reference.reference}</p>
+        </div>
+        ))
+      }
+    </div>
+    <br></br>
   </div>
 
   )
