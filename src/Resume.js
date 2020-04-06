@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './App.css';
 
 
@@ -31,11 +31,12 @@ export default function DataEntry(props) {
       {
         work.map((job, index)=>(
           <div key={index}>
+            <div className="header">
             <p>Company: {job.company}</p>
-            <p>Position: {job.position}</p>
             <p>Website: <a href={job.website}>{job.website}</a></p>
-            <p>Start Date: {job.startDate}</p>
-            <p>End Date: {job.endDate}</p>
+            </div>
+            <p>({job.startDate} to {job.endDate}) </p>
+            <p>Position: {job.position}</p>
             <p><u>Summary</u></p>
             <p>{job.summary}</p>
             <p><u>Highlights</u></p>
@@ -52,11 +53,12 @@ export default function DataEntry(props) {
       {
         volunteer.map((job, index)=>(
           <div key={index}>
+            <div className="header">
             <p>Organization: {job.organization}</p>
-            <p>Position: {job.position}</p>
             <p>Website: <a href={job.website}>{job.website}</a></p>
-            <p>Start Date: {job.startDate}</p>
-            <p>End Date: {job.endDate}</p>
+            </div>
+            <p>({job.startDate} to {job.endDate}) </p>
+            <p>Position: {job.position}</p>
             <p><u>Summary</u></p>
             <p>{job.summary}</p>
             <p><u>Highlights</u></p>
@@ -98,7 +100,6 @@ export default function DataEntry(props) {
           <p>Award Title: {award.title}</p>
           <p>Date Earned: {award.date}</p>
           <p>Awarded By: {award.awarder}</p>
-          <p>Award Title: {award.title}</p>
           <p><u>Summary</u></p>
           <p>{award.summary}</p>
         </div>

@@ -17,6 +17,16 @@
   margin-left:5rem;
 }
 
+.header{
+  display:flex;
+  justify-content: space-between;
+  padding-right: 1em;
+}
+
+.header p{
+  margin: 0;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
