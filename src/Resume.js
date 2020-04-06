@@ -69,6 +69,28 @@ export default function DataEntry(props) {
       }
     </div>
     <br></br>
+    <div className='section'>
+      <h2><strong>Education</strong></h2>
+      {
+        education.map((school, index)=>(
+          <div key={index}>
+            <p>Institution: {school.institution}</p>
+            <p>Area of Study: {school.area}</p>
+            <p>Degree Earned: {school.studyType}</p>
+            <p>Start Date: {school.startDate}</p>
+            <p>End Date: {school.endDate}</p>
+            <p>GPA: {school.gpa}</p>
+            <p><u>Courses</u></p>
+            {school.courses.map((course, index)=>(
+              <li key={index}>{course}</li>
+            ))}
+
+          </div>
+        ))
+      }
+    </div>
+    <br></br>
+
   </div>
 
   )
