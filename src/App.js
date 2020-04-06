@@ -15,14 +15,16 @@ function App() {
   return (
     <Router>
     <div className="App">
-    <header className="App-header">
+    <body className="App-body">
+    
+    
     <Switch>
       <Route exact path="/">
         <DataEntry resume={resume} />
       </Route>
       <Route path="/resume" component={(props)=><Resume {...props} />}/>     
     </Switch>
-    </header>
+    </body>
     </div>
     </Router>
   );

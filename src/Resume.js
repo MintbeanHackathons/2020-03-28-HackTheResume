@@ -3,42 +3,47 @@ import './App.css';
 
 
 export default function DataEntry(props) {
-    let resume = props.location.state.resume;
+    const resume = props.location.state.resume;
+    const {name, label, email, phone, summary} = resume.basics;
+    const {address, city, region, countryCode, postalCode} = resume.basics.location;
+    const profiles = resume.basics.profiles;
+    const work = resume.work;
+
   return (
-    <div className='resume'>
-    <div className="App-header">
+  <div>
     <h1> Your Resume </h1>
-    <p><strong>{resume.basics.name}</strong></p>
-    <p><strong>{resume.basics.label}</strong></p>
-    <p>Address: {resume.basics.location.address}, {resume.basics.location.city}, {resume.basics.location.region}, {resume.basics.location.countryCode} {resume.basics.location.postalCode} </p>
-    <p><u>Email</u>: {resume.basics.email}</p>
-    <p><u>Phone</u>: {resume.basics.phone}</p>
+    <p><strong>{name}</strong></p>
+    <p><strong>{label}</strong></p>
+    <p>Address: {address}, {city}, {region}, {countryCode} {postalCode} </p>
+    <p><u>Email</u>: {email}</p>
+    <p><u>Phone</u>: {phone}</p>
     {
-      resume.basics.profiles.map(profile=>(
+      profiles.map(profile=>(
         <p><u>{profile.network}</u>: <a href={profile.url}>{profile.username}</a> </p>
       ))
     }
-    </div>
     <br></br>
     <h2><strong>Summary</strong></h2>
-    <p>{resume.basics.summary}</p>
+    <p>{summary}</p>
     <br></br>
     <div className='work'>
-    <h2><strong>Work Experience</strong></h2>
-    {
-      resume.work.map(job=>(
-        <div>
-          <p>Company: {job.company}</p>
-          <p>Position: {job.position}</p>
-          <p>Website: <a href={job.website}>{job.website}</a></p>
-          <p>Start Date: {job.startDate}</p>
-          <p>End Date: {job.endDate}</p>
-          <p>Summary</p>
-        <p>{job.summary}</p>
-        </div>
-      ))
-    }
+      <h2><strong>Work Experience</strong></h2>
+      {
+        work.map(job=>(
+          <div>
+            <p>Company: {job.company}</p>
+            <p>Position: {job.position}</p>
+            <p>Website: <a href={job.website}>{job.website}</a></p>
+            <p>Start Date: {job.startDate}</p>
+            <p>End Date: {job.endDate}</p>
+            <p>Summary</p>
+          <p>{job.summary}</p>
+          </div>
+        ))
+      }
     </div>
-    </div>
+    <br></br>
+  </div>
+
   )
 }
