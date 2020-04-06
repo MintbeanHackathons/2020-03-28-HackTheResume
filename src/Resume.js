@@ -90,6 +90,21 @@ export default function DataEntry(props) {
       }
     </div>
     <br></br>
+    <div className="section">
+      <h2><strong>Awards</strong></h2>
+      {
+        awards.map((award,index)=>(
+        <div key={index}>
+          <p>Award Title: {award.title}</p>
+          <p>Date Earned: {award.date}</p>
+          <p>Awarded By: {award.awarder}</p>
+          <p>Award Title: {award.title}</p>
+          <p><u>Summary</u></p>
+          <p>{award.summary}</p>
+        </div>
+        ))
+      }
+    </div>
 
   </div>
 
