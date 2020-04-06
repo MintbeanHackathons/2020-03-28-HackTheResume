@@ -27,6 +27,18 @@
   margin: 0;
 }
 
+.accomplishments{
+  display:flex;
+  justify-content: space-evenly;
+  padding-right: 2em;
+}
+
+.supplement{
+  display:flex;
+  justify-content: space-between;
+  padding-right: 2em;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

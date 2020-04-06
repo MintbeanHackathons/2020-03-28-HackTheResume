@@ -92,78 +92,80 @@ export default function DataEntry(props) {
       }
     </div>
     <br></br>
-    <div className="section">
-      <h2><strong>Awards</strong></h2>
-      {
-        awards.map((award,index)=>(
-        <div key={index}>
-          <p>Award Title: {award.title}</p>
-          <p>Date Earned: {award.date}</p>
-          <p>Awarded By: {award.awarder}</p>
-          <p><u>Summary</u></p>
-          <p>{award.summary}</p>
-        </div>
-        ))
-      }
+    <div className="accomplishments">
+      <div className="section">
+        <h2><strong>Awards</strong></h2>
+        {
+          awards.map((award,index)=>(
+          <div key={index}>
+            <p>Award Title: {award.title}</p>
+            <p>Date Earned: {award.date}</p>
+            <p>Awarded By: {award.awarder}</p>
+            <p><u>Summary</u></p>
+            <p>{award.summary}</p>
+          </div>
+          ))
+        }
+      </div>
+      <br></br>
+      <div className="section">
+        <h2><strong>Publications</strong></h2>
+        {
+          publications.map((publication,index)=>(
+          <div key={index}>
+            <p>Title: {publication.name}</p>
+            <p>Publisher: {publication.publisher}</p>
+            <p>Release Date: {publication.releaseDate}</p>
+            <p>Website: <a href={publication.website}>{publication.website}</a></p>
+            <p><u>Summary</u></p>
+            <p>{publication.summary}</p>
+          </div>
+          ))
+        }
+      </div>
     </div>
     <br></br>
-    <div className="section">
-      <h2><strong>Publications</strong></h2>
-      {
-        publications.map((publication,index)=>(
-        <div key={index}>
-          <p>Title: {publication.name}</p>
-          <p>Publisher: {publication.publisher}</p>
-          <p>Release Date: {publication.releaseDate}</p>
-          <p>Website: <a href={publication.website}>{publication.website}</a></p>
-          <p><u>Summary</u></p>
-          <p>{publication.summary}</p>
-        </div>
-        ))
-      }
-    </div>
-    <br></br>
-    <div className="section">
-      <h2><strong>Skills</strong></h2>
-      {
-        skills.map((skill,index)=>(
-        <div key={index}>
-          <p>Name: {skill.name}</p>
-          <p>Level: {skill.level}</p>
-          <p><u>Keywords</u></p>
-            {skill.keywords.map((keyword, index)=>(
-              <li key={index}>{keyword}</li>
-            ))}
-        </div>
-        ))
-      }
-    </div>
-    <br></br>
-    <div className="section">
-      <h2><strong>Languages</strong></h2>
-      {
-        languages.map((language,index)=>(
-        <div key={index}>
-          <p>Language: {language.language}</p>
-          <p>Proficiency: {language.fluency}</p>
-        </div>
-        ))
-      }
-    </div>
-    <br></br>
-    <div className="section">
-      <h2><strong>Interests</strong></h2>
-      {
-        interests.map((interest,index)=>(
-        <div key={index}>
-          <p>Name: {interest.name}</p>
-          <p><u>Keywords</u></p>
-            {interest.keywords.map((keyword, index)=>(
-              <li key={index}>{keyword}</li>
-            ))}
-        </div>
-        ))
-      }
+    <div className="supplement">
+      <div className="section">
+        <h2><strong>Skills</strong></h2>
+        {
+          skills.map((skill,index)=>(
+          <div key={index}>
+            <p>Name: {skill.name}</p>
+            <p>Level: {skill.level}</p>
+            <p><u>Keywords</u></p>
+              {skill.keywords.map((keyword, index)=>(
+                <li key={index}>{keyword}</li>
+              ))}
+          </div>
+          ))
+        }
+      </div>
+      <div className="section">
+        <h2><strong>Languages</strong></h2>
+        {
+          languages.map((language,index)=>(
+          <div key={index}>
+            <p>Language: {language.language}</p>
+            <p>Proficiency: {language.fluency}</p>
+          </div>
+          ))
+        }
+      </div>
+      <div className="section">
+        <h2><strong>Interests</strong></h2>
+        {
+          interests.map((interest,index)=>(
+          <div key={index}>
+            <p>Name: {interest.name}</p>
+            <p><u>Keywords</u></p>
+              {interest.keywords.map((keyword, index)=>(
+                <li key={index}>{keyword}</li>
+              ))}
+          </div>
+          ))
+        }
+      </div>
     </div>
     <br></br>
     <div className="section">
