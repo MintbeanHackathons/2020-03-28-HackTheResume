@@ -8,6 +8,8 @@ export default function DataEntry(props) {
     const {name, label, email, phone, summary, profiles, picture} = resume.basics;
     const {address, city, region, countryCode, postalCode} = resume.basics.location;
 
+    window.scrollTo(0, 0)
+
   return (
   <div>
     <h1> Your Resume </h1>
