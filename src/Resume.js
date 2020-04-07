@@ -24,7 +24,7 @@ export default function DataEntry(props) {
     }
     <br></br>
     <h2><strong>Summary</strong></h2>
-    <p>{summary}</p>
+    <p className="summary">{summary}</p>
     <br></br>
     <div className='section'>
       <h2><strong>Work Experience</strong></h2>
