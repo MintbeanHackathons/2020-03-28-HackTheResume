@@ -3,7 +3,7 @@ import './App.css';
 
 
 export default function DataEntry(props) {
-    const resume = props.location.state.resume;
+    const resume = JSON.parse(props.location.state.resume);
     const {work, volunteer, education, awards, skills, publications, interests, references, languages} = resume;
     const {name, label, email, phone, summary, profiles} = resume.basics;
     const {address, city, region, countryCode, postalCode} = resume.basics.location;
