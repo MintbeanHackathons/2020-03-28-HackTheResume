@@ -5,15 +5,16 @@ import './App.css';
 export default function DataEntry(props) {
     const resume = JSON.parse(props.location.state.resume);
     const {work, volunteer, education, awards, skills, publications, interests, references, languages} = resume;
-    const {name, label, email, phone, summary, profiles} = resume.basics;
+    const {name, label, email, phone, summary, profiles, picture} = resume.basics;
     const {address, city, region, countryCode, postalCode} = resume.basics.location;
 
   return (
   <div>
     <h1> Your Resume </h1>
+    <img className="picture" src={picture} alt="Profile Pic"/>
     <p><strong>{name}</strong></p>
     <p><strong>{label}</strong></p>
-    <p>Address: {address}, {city}, {region}, {countryCode} {postalCode} </p>
+    <p><u>Address</u>: {address}, {city}, {region}, {countryCode} {postalCode} </p>
     <p><u>Email</u>: {email}</p>
     <p><u>Phone</u>: {phone}</p>
     {

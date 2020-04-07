@@ -7,6 +7,13 @@
   min-height: 100vh
 }
 
+.picture{
+    width: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+}
+
 .textarea{
   width: 50vw;
   height: 50vw;

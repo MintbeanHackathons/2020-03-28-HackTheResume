@@ -1,23 +1,23 @@
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Programmer",
-    "picture": "",
-    "email": "john@gmail.com",
+    "name": "Bashir Egeh",
+    "label": "Full Stack Web Developer",
+    "picture": "https://media-exp1.licdn.com/dms/image/C5603AQFgY9GdNy6D-w/profile-displayphoto-shrink_200_200/0?e=1591833600&v=beta&t=9rkxhSAO0Oti0OCFyEbH_2kmGQQvSxlc1ozICu1Dz6g",
+    "email": "be@mail.com",
     "phone": "(912) 555-4321",
-    "website": "http://johndoe.com",
-    "summary": "A summary of John Doe...",
+    "website": "https://github.com/begeh",
+    "summary": "Full-stack web developer looking for opportunities in front-end and/or back-end development. Experienced as a pharmacist in the community setting. Stack: React, Javascript, Ruby on Rails, HTML, CSS, SASS, Linux, ExpressJS, NodeJS, PostgreSQL Testing: Storybook, Jest, Cypress, Mocha/Chai, RSpec, Capybara ",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "123 Fake St",
+      "postalCode": "ON M1E 4X7",
+      "city": "Toronto",
+      "countryCode": "CA",
+      "region": "Ontario"
     },
     "profiles": [{
-      "network": "Twitter",
-      "username": "john",
-      "url": "http://twitter.com/john"
+      "network": "LinkedIn",
+      "username": "begeh",
+      "url": "https://www.linkedin.com/in/bashir-egeh-776954129/"
     }]
   },
   "work": [{
