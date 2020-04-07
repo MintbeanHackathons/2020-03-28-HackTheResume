@@ -3,12 +3,12 @@ import './App.css';
 
 
 export default function DataEntry(props) {
-    const resume = JSON.parse(props.location.state.resume);
-    const {work, volunteer, education, awards, skills, publications, interests, references, languages} = resume;
-    const {name, label, email, phone, summary, profiles, picture} = resume.basics;
-    const {address, city, region, countryCode, postalCode} = resume.basics.location;
+  const resume = JSON.parse(props.location.state.resume);
+  const {work, volunteer, education, awards, skills, publications, interests, references, languages} = resume;
+  const {name, label, email, phone, summary, profiles, picture} = resume.basics;
+  const {address, city, region, countryCode, postalCode} = resume.basics.location;
 
-    window.scrollTo(0, 0)
+  window.scrollTo(0, 0)
 
   return (
   <div>
