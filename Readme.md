@@ -34,7 +34,7 @@ Given that we only had 2 hours to complete this project, I did not take the time
 ## Results
 I completed my very first hackathon... and was a **2nd place runner up**! :raised_hands:
 
-I highly recommend that any devs just starting out participate in Mintbean's hackathons as they are very beginner-friendly. I liked that I could take on a challenge solo, but still was able to learn from others through code review. With a few more of these under my belt, I 
+I highly recommend that any devs just starting out participate in Mintbean's hackathons as they are very beginner-friendly. I liked that I could take on a challenge solo, but still was able to learn from others through code review. It was a great way for me to get started with Hackathons and I feel ready to take on even bigger challenges.
 
 I welcome any additional code review comments if you'd like to have a look. Please comment via my [Pull Request](https://github.com/MintbeanHackathons/2020-03-28-HackTheResume/pull/9).
 
