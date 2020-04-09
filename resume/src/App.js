@@ -27,7 +27,6 @@ function App() {
         />
       </div>
       <ResumeFooter
-        awards={data.awards}
         publications={data.publications}
         languages={data.languages}
         interests={data.interests}

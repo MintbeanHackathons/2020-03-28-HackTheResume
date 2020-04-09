@@ -1,39 +1,35 @@
 import React from 'react';
 
 const ResumeFooter = (props) => {
-    const awards = props.awards.map(item =>
-        <div className="award">
-            <div>{item.title} | {item.awarder} | {item.date}</div>
-            <div>{item.summary}</div>
-        </div>
-    )
-    const publications = props.publications.map(item =>
-        <div className="publication">
+
+    const section = (label, content) => (
+        <div>
+            <h3>{label}</h3>
+            {content}
+        </div>)
+
+    const publications = props.publications && props.publications.map(item =>
+        <div className="publication" key={item.name}>
             <div><a href={item.website} alt={item.name}>{item.name}</a> | {item.publisher} | {item.releaseDate}</div>
             <div>{item.summary}</div>
         </div>
-    )
-    const languages = props.languages.map(item =>
-        <span>{item.language}, {item.fluency} </span>
-    )
-    const interests = props.interests.map(item =>
-        <span>{item.name}, </span>
-    )
+    )    
+    const interests = props.interests && props.interests.map(item => item.name).join(", ")
+    
+    const languages = props.languages && props.languages.map(item => item.language).join(", ")
 
-    const references = props.references.map(item =>
-        <div>{item.name}, {item.reference}</div>
+    const references = props.references && props.references.map(item =>
+        <div key={item.name}>{item.name}, {item.reference}</div>
     )
 
     return (
-        <div className="footer">
-            {awards ? <div> <h3>Awards</h3> {awards} </div> : null}
-            {publications ? <div> <h3>Publications</h3> {publications} </div> : null}
-            {references ? <div> <h3>References</h3> {references} </div> : null}
-            {languages ? <div> <h3>Languages:</h3> {languages} </div> : null}
-            {interests ? <div> <h3>Interests:</h3> {interests} </div> : null}
+        <div className="resume-footer">
+            {publications && section("Publications", publications)}
+            {references && section("References", references)}
+            {languages && section("Languages", languages)}
+            {interests && section("Interests", interests)}
         </div>
     )
 }
-
 
 export default ResumeFooter

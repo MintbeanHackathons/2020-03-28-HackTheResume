@@ -159,15 +159,6 @@
       "summary": ""
     }
   ],
-  "publications": [
-    {
-      "name": "",
-      "publisher": "",
-      "releaseDate": "",
-      "website": "",
-      "summary": ""
-    }
-  ],
   "skills": [
     {
       "name": "Software Development",
@@ -213,27 +204,6 @@
         "Adobe Analytics",
         "Google Analytics"
       ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "",
-      "fluency": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "",
-      "keywords": [
-        "",
-        ""
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "",
-      "reference": ""
     }
   ]
 }
