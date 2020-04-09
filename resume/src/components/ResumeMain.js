@@ -2,7 +2,7 @@ import React from 'react';
 import Experience from './Experience';
 import Education from './Education';
 
-const Main = (props) => {
+const ResumeMain = (props) => {
     return(
         <div className="main">
             <Experience work={props.work} volunteer={props.volunteer}/>
@@ -12,4 +12,4 @@ const Main = (props) => {
 }
 
 
-export default Main
+export default ResumeMain

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = (props) => {
+const ResumeFooter = (props) => {
     const awards = props.awards.map(item =>
         <div className="award">
             <div>{item.title} | {item.awarder} | {item.date}</div>
@@ -36,4 +36,4 @@ const Footer = (props) => {
 }
 
 
-export default Footer
+export default ResumeFooter

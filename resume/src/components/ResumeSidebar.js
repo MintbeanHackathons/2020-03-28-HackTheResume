@@ -2,7 +2,7 @@ import React from 'react';
 import Contact from './Contact';
 import Skills from './Skills';
 
-const Sidebar = (props) => {
+const ResumeSidebar = (props) => {
 
     return (
         <div className="sidebar">
@@ -12,4 +12,4 @@ const Sidebar = (props) => {
     )
 }
 
-export default Sidebar
+export default ResumeSidebar

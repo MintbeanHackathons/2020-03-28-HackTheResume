@@ -1,29 +1,26 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import Main from './components/Main';
-import Footer from './components/Footer';
-import data from './data/data.json';
+import React from "react";
+
+import ResumeHeader from "./components/ResumeHeader";
+import ResumeSidebar from "./components/ResumeSidebar";
+import ResumeMain from "./components/ResumeMain";
+import ResumeFooter from "./components/ResumeFooter";
+import data from "./data/data.json";
+
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Header
-        basics={data.basics}
-      />
+      <ResumeHeader basics={data.basics} />
       <div className="middle-container">
-        <Sidebar
-          basics={data.basics}
-          skills={data.skills}
-        />
-        <Main
+        <ResumeSidebar basics={data.basics} skills={data.skills} />
+        <ResumeMain
           work={data.work}
           volunteer={data.volunteer}
           education={data.education}
         />
       </div>
-      <Footer
+      <ResumeFooter
         awards={data.awards}
         publications={data.publications}
         languages={data.languages}

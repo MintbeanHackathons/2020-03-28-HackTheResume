@@ -2,10 +2,10 @@
 :root {
   --headline-font: 'Roboto', sans-serif;
   --body-font: 'Source Sans Pro', sans-serif;
-  --main-color: #26759A;
-  --light-accent-color: #3DBDD7;
+  --light-accent-color: #3dbdd7;
   --dark-shade-color: #213248;
   --light-shade-color: #E2E4EB;
+  --light-accent-color-transparent:rgba(61, 189, 215, .05);
 }
 
 * {
@@ -21,6 +21,8 @@ body {
 h1, h2, h3, h4 {
   font-family: var(--headline-font);
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 ul {
@@ -32,7 +34,7 @@ ul {
   font-weight: bold;
 }
 
-/* Header Styles */
+/* Resume Header Styles */
 header {
   text-align: center;
   background-color: var(--dark-shade-color);
@@ -40,7 +42,7 @@ header {
   padding: 1rem;
 }
 
-/* Main Section Styles */
+/* Resume Main Section Styles */
 
 .middle-container {
   display: flex;
@@ -52,7 +54,8 @@ header {
 .sidebar {
   width: 28%;
   padding: 1rem 2rem;
-  border-right: 2px solid var(--dark-shade-color)
+  border-right: 2px solid var(--dark-shade-color);
+  background-color: var(--light-accent-color-transparent)
 }
 
 .main {
@@ -68,7 +71,7 @@ header {
   text-align: left;
 }
 
-/* Footer styles */
+/* Resume Footer styles */
 
 .footer {
   padding-left: 2rem;

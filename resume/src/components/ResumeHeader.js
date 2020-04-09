@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = (props) => {
+const ResumeHeader = (props) => {
 
     const { name, label, summary, picture} = props.basics
 
@@ -14,4 +14,4 @@ const Header = (props) => {
     )
 }
 
-export default Header
+export default ResumeHeader
