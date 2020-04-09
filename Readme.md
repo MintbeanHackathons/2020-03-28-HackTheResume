@@ -38,6 +38,6 @@ I highly recommend that any devs just starting out participate in Mintbean's hac
 
 I welcome any additional code review comments if you'd like to have a look. Please comment via my [Pull Request](https://github.com/MintbeanHackathons/2020-03-28-HackTheResume/pull/9).
 
-Here is a screenshot of my project at the end of the challenge. I am continuing to work on it, so that I can add it to my portfolio and so the final version will be much more polished. :smile:
+Here is a screenshot of my project at the end of the challenge. I continued working on it after submitting the final, so that I could add it to my portfolio. [The final version](http://jngong-resume.surge.sh/) is a bit more polished. :smile:
 
 ![Hack the Resume Challenge V1](/images/v1-resume-03-28-2020.png)
