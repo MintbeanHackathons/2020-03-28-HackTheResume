@@ -2,32 +2,43 @@ import React from 'react';
 
 const Experience = (props) => {
     
-    const work = props.work.map(work => {
+    const work = props.work.map((work, i) => {
         return (
-            <div className="work-experience">
-                <h3>{work.company}</h3>
-                <h4>{work.position}</h4>
-                <div>{work.startDate} - {work.endDate}</div>
-                <div>{work.summary}</div>
+            <div className="work-experience" key={i}>
+                <h3>
+                    {work.company}, ({new Date(work.startDate).getFullYear()} &ndash; {new Date(work.endDate).getFullYear()})
+                </h3>
+                <p className="italic">{work.position}</p>
+                {work.summary && <p>{work.summary}</p>}
                 <ul className="work-bullets">
-                    {work.highlights.map(highlight => <li>{highlight}</li>)}
+                    {work.highlights.map((highlight, i) => <li key={i}>{highlight}</li>)}
                 </ul>
-                <div><a href={work.website}>Website</a></div>
+
+                {work.projects && 
+                    <div>
+                        <p className="bold">Key Projects:</p>
+                        <ul className="work-bullets">
+                            {work.projects.map((project,i) => 
+                                <li key={i}><span className="bold">{project.title}:</span> {project.description}</li>
+                            )}
+                        </ul>
+                    </div>
+                }
             </div>
         )
     })
 
-    const volunteer = props.volunteer.map(volunteer => {
+    const volunteer = props.volunteer.map((volunteer, i) => {
         return (
-            <div className="volunteer-experience">
-                <h3>{volunteer.organization}</h3>
-                <h4>{volunteer.position}</h4>
-                <div>{volunteer.startDate} - {volunteer.endDate}</div>
-                <div>{volunteer.summary}</div>
+            <div className="work-experience" key={i}>
+                <h3>
+                    {volunteer.organization}, ({new Date(volunteer.startDate).getFullYear()} &ndash; {volunteer.endDate === "Present" ? "Present" : new Date(volunteer.endDate).getFullYear()})
+                </h3>
+                <p className="italic">{volunteer.position}</p>
+                {volunteer.summary && <p>{volunteer.summary}</p>}
                 <ul className="work-bullets">
-                    {volunteer.highlights.map(highlight => <li>{highlight}</li>)}
+                    {volunteer.highlights.map((highlight, i) => <li key={i}>{highlight}</li>)}
                 </ul>
-                <div><a href={volunteer.website}>Website</a></div>
             </div>
         )
     })

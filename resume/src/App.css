@@ -22,9 +22,26 @@ h1, h2, h3, h4 {
   font-family: var(--headline-font);
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 0 0 1rem 0;
+  margin: 0;
   padding: 0
+}
+
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+  margin-bottom: .5rem;
+}
+
+h2 {
+  letter-spacing: 2px;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
 }
 
 a {
@@ -45,22 +62,16 @@ ul {
   font-weight: bold;
 }
 
+.italic {
+  font-style: italic;
+}
+
 /* Resume Header Styles */
 .resume-header {
   text-align: center;
   background-color: var(--dark-shade-color);
   color: #ffffff;
   padding: 2.5rem 1rem;
-}
-
-.resume-header > h1 {
-  font-size: 3.5rem;
-  letter-spacing: 5px;
-  margin-bottom: .5rem;
-}
-
-.resume-header > h2 {
-  font-size: 1.75rem;
 }
 
 .resume-header > p {
@@ -88,6 +99,10 @@ ul {
   background-color: var(--light-accent-color-transparent)
 }
 
+.sidebar-section {
+  margin: 0 .5rem 2rem;
+}
+
 .icon {
   height: .9rem;
   width: .9rem;
@@ -101,6 +116,15 @@ ul {
 
 .main {
   width: 70%;
+  margin: 0 2.5rem 0;
+}
+
+.work-experience {
+  margin-bottom: 2.5rem;
+}
+
+.work-experience > p {
+  margin: 0;
 }
 
 .work-bullets {
@@ -109,6 +133,7 @@ ul {
   margin-block-start: 1em;
   margin-block-end: 1em;
   text-align: left;
+  line-height: 1.4rem;
 }
 
 /* Resume Footer styles */

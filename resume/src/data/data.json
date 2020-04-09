@@ -37,7 +37,7 @@
       "summary": "",
       "location": "New York, NY",
       "highlights": [
-        "Gained solid knowledge of algorithms, data structures, databases, MVC pattern design and object-oriented programming",
+        "Gained solid knowledge of algorithms, data structures, databases, Model View Controller pattern design and object-oriented programming",
         "Designed interactive, responsive applications with  HTML, CSS, Javascript, React and third-party API integrations",
         "Developed full-stack applications and designed REST APIs with full CRUD functionality using React, Sequelize, Node.js, Express.js, PostgreSQL and Ruby on Rails",
         "Managed team-based web development projects using agile workflow, Trello and Github"
@@ -45,19 +45,19 @@
       "projects": [
         {
           "title": "Travelogue",
-          "description": "Full-stack travel journal app with full CRUD functionality, user authentication and a REST JSON API, built with a React front-end and a Ruby on Rails back-end"
+          "description": "Full-stack travel journal application with full CRUD functionality, user authentication and a REST JSON API, built with a React front-end and a Ruby on Rails back-end"
         },
         {
           "title": "Expedia Clone",
-          "description": "Full-stack app adding feature to find eco-friendly hotels, built in collaboration with UX designers and engineers using React, Express.js, PostgreSQL and Sequelize"
+          "description": "Full-stack application adding feature to find eco-friendly hotels, built in collaboration with UX designers and engineers using React, Express.js, PostgreSQL and Sequelize"
         },
         {
           "title": "Gender Diversity in Film",
-          "description": "Front-end app built with The Movie Database API, Bechdel Test API, React and CSS"
+          "description": "Front-end web application built with React, CSS, The Movie Database API and the Bechdel Test API"
         },
         {
           "title": "EntertainmentIQ",
-          "description": "Front-end game app built with Open Trivia Database API, HTML, CSS and vanilla Javascript"
+          "description": "Front-end game application built with HTML, CSS, vanilla Javascript and the Open Trivia Database API"
         }
       ]
     },
@@ -94,14 +94,14 @@
   "volunteer": [
     {
       "organization": "Friends of Columbus Park",
-      "position": "Volunteer",
+      "position": "Volunteer (Web Developer)",
       "website": "https://jngong.github.io/focp-ny-website/",
       "startDate": "2019-05-01",
       "endDate": "Present",
       "summary": "",
       "location": "New York, NY",
       "highlights": [
-        "Fully redesigned the website for this not-for-profit, 501(c)3 organization using HTML, CSS and jQuery",
+        "Fully redesigned the organization's website using HTML, CSS and jQuery",
         "Restructured site map, updated and organized primary content",
         "Implemented Slick Carousel and Fancy Box jQuery libraries to add functionality to image rendering"
       ]
