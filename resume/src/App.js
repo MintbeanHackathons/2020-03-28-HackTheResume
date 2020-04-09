@@ -18,6 +18,7 @@ function App() {
         <ResumeSidebar 
           basics={data.basics} 
           skills={data.skills} 
+          awards={data.awards}
         />
         <ResumeMain
           work={data.work}

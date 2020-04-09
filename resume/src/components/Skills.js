@@ -1,24 +1,18 @@
-import React from 'react';
+import React from "react";
 
-const Skills = (props) => {
+const Skills = ({skills}) => {
+  return (
+    <div className="skills sidebar-section">
+      <h2>Skills</h2>
+      {skills.map((skill) => (
+        <p className="skill-category" key={skill.name}>
+          <span className="bold">{skill.name}: </span>
+          <br />
+          {skill.keywords.join(", ")}
+        </p>
+      ))}
+    </div>
+  );
+};
 
-    const skills = props.skills.map(skill => {
-        return (
-        <div className="skill" key={skill.name}>
-            <p><span className="bold">{skill.name}</span></p>
-            {skill.level ? <p>{skill.level}</p> : null}
-            <ul>
-                {skill.keywords.map(item => <li>{item}</li>)}
-            </ul>
-        </div> )
-    })
-
-    return(
-        <div className="skills-section">
-            <h2>Skills</h2>
-            {skills}
-        </div>
-    )
-}
-
-export default Skills
+export default Skills;

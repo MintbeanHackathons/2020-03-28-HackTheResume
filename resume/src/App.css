@@ -27,6 +27,15 @@ h1, h2, h3, h4 {
   padding: 0
 }
 
+a {
+  text-decoration: none;
+  color: var(--dark-shade-color)
+}
+
+a:hover {
+  color: var(--light-accent-color)
+}
+
 ul {
   list-style-type: none; 
   padding: 0
@@ -69,16 +78,29 @@ ul {
   background-color: var(--light-shade-color);
 }
 
+.middle-container > div {
+  padding: 2.5rem;
+}
+
 .sidebar {
   width: 28%;
-  padding: 1rem 2rem;
   border-right: 2px solid var(--dark-shade-color);
   background-color: var(--light-accent-color-transparent)
 }
 
+.icon {
+  height: .9rem;
+  width: .9rem;
+  margin-right: .5rem;
+}
+
+.contact-details > li {
+  line-height: 1.5rem;
+  padding: 0;
+}
+
 .main {
-  width: 68%;
-  padding: 1rem 2rem;
+  width: 70%;
 }
 
 .work-bullets {
