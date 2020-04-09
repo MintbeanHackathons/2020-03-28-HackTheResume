@@ -66,6 +66,18 @@ ul {
 }
 
 /* Resume Header Styles */
+
+.pdf-bar, .icon-attribution {
+  text-align: center;
+  line-height: 4rem;
+}
+
+.pdf-icon {
+  height: 1rem;
+  width: 1rem;
+  margin-left: .5rem;
+}
+
 .resume-header {
   text-align: center;
   background-color: var(--dark-shade-color);
@@ -81,7 +93,7 @@ ul {
 
 /* Resume Main Section Styles */
 
-.main h2 {
+.middle-container h2 {
   color: var(--dark-shade-color)
 }
 
