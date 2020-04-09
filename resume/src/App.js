@@ -11,9 +11,14 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <ResumeHeader basics={data.basics} />
+      <ResumeHeader 
+        basics={data.basics} 
+      />
       <div className="middle-container">
-        <ResumeSidebar basics={data.basics} skills={data.skills} />
+        <ResumeSidebar 
+          basics={data.basics} 
+          skills={data.skills} 
+        />
         <ResumeMain
           work={data.work}
           volunteer={data.volunteer}
