@@ -20,12 +20,12 @@ I built my resume with the React.js framework and handrolled the CSS for the lay
 
 Given that we only had 2 hours to complete this project, I did not take the time to update all of the resume information in the JSON file. I primarily focused on ensuring all of the JSON resume schema fields were supported in one way or another and kept the design simple.
 
-## My Challenges
+## Challenges
 
 1. **Time:** I've built end-to-end projects before but never under such strict time pressure, and realized that the 2-hour timeframe really forces you to manage your time much better. I realized about halfway through that I might not finish because I was taking too much time focusing on small details. At that point, I took the fastest path to getting the necessary information to render on the page and kept the design simple.
 2. **Lack of Experimentation:** I focused on what I knew I could get done for this project, but was hesitant to step out of my comfort zone and find more efficient ways to accomplish my goals. Part of it was fear that I wouldn't get the project done on time, but I also was scared of not being able to implement new solutions correctly and so I didn't try. This was a mistake. I realize that I need to do more of these challenges to push my learning and continue growing as a developer.
 
-## My Key Learnings
+## Key Learnings
 1. **Time management:** Even for these mini-projects, realistic planning and time management is important!
 2. **Code review:** I learned so much from reviewing other developers' code and dissecting their approach to this problem. I also learned that I could actually add value to others with helpful comments!
 3. **Reusability:** Thanks to some helpful reviewers of my own code, I learned that I should be thinking about how to create reusable components for sections that are formatted the same. I could create a function that takes a `label` and `content` as arguments. This would make my code much DRY-er!
@@ -40,4 +40,4 @@ I welcome any additional code review comments if you'd like to have a look. Plea
 
 Here is a screenshot of my project at the end of the challenge. I am continuing to work on it, so that I can add it to my portfolio and so the final version will be much more polished. :smile:
 
-![Hack the Resume Challenge V1](/v1-resume-03-28-2020.png)
+![Hack the Resume Challenge V1](/images/v1-resume-03-28-2020.png)
