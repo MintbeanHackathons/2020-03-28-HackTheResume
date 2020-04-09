@@ -2,14 +2,11 @@ import React from 'react';
 
 const Education = (props) => {
 
-    const education = props.education.map(edu => {
+    const education = props.education.map((edu, i) => {
         return(
-            <div className="education">
+            <div className="education" key={i}>
                 <h3>{edu.institution}</h3>
-                <div>{edu.startDate} - {edu.endDate}</div>
-                <div>{edu.studyType}, {edu.area}</div>
-                <div>{edu.gpa}</div>
-                <ul>{edu.courses.map(course => <li>{course}</li>)}</ul>
+                <div>{edu.area}, {edu.studyType}</div>
             </div>
         )
     })

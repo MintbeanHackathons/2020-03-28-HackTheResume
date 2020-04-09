@@ -26,7 +26,6 @@ h1, h2, h3, h4 {
   padding: 0
 }
 
-
 h1 {
   font-size: 3.5rem;
   letter-spacing: 5px;
@@ -82,6 +81,10 @@ ul {
 
 /* Resume Main Section Styles */
 
+.main h2 {
+  color: var(--dark-shade-color)
+}
+
 .middle-container {
   display: flex;
   flex-direction: row;
@@ -89,14 +92,11 @@ ul {
   background-color: var(--light-shade-color);
 }
 
-.middle-container > div {
-  padding: 2.5rem;
-}
-
 .sidebar {
   width: 28%;
   border-right: 2px solid var(--dark-shade-color);
-  background-color: var(--light-accent-color-transparent)
+  background-color: var(--light-accent-color-transparent);
+  padding: 2.5rem;
 }
 
 .sidebar-section {
@@ -116,7 +116,7 @@ ul {
 
 .main {
   width: 70%;
-  margin: 0 2.5rem 0;
+  padding: 2.5rem 8rem 2.5rem 2rem
 }
 
 .work-experience {
@@ -136,6 +136,10 @@ ul {
   line-height: 1.4rem;
 }
 
+.education {
+  margin-bottom: 1.5rem;
+}
+
 /* Resume Footer styles */
 
 .resume-footer {
@@ -150,4 +154,33 @@ ul {
 .resume-footer > div {
   width: 30%;
   margin: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .middle-container {
+    flex-direction: column;
+  }
+
+  .sidebar, .main {
+    width: 100%
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .resume-header > p {
+    padding: 0 2rem;
+    line-height: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
 }

@@ -6,9 +6,9 @@ const Experience = (props) => {
         return (
             <div className="work-experience" key={i}>
                 <h3>
-                    {work.company}, ({new Date(work.startDate).getFullYear()} &ndash; {new Date(work.endDate).getFullYear()})
+                    {work.company} ({new Date(work.startDate).getFullYear()} &ndash; {new Date(work.endDate).getFullYear()})
                 </h3>
-                <p className="italic">{work.position}</p>
+                {work.position.map((position, i) => <p className="italic" key={i}>{position}</p>)}
                 {work.summary && <p>{work.summary}</p>}
                 <ul className="work-bullets">
                     {work.highlights.map((highlight, i) => <li key={i}>{highlight}</li>)}
@@ -32,7 +32,7 @@ const Experience = (props) => {
         return (
             <div className="work-experience" key={i}>
                 <h3>
-                    {volunteer.organization}, ({new Date(volunteer.startDate).getFullYear()} &ndash; {volunteer.endDate === "Present" ? "Present" : new Date(volunteer.endDate).getFullYear()})
+                    {volunteer.organization} ({new Date(volunteer.startDate).getFullYear()} &ndash; {volunteer.endDate === "Present" ? "Present" : new Date(volunteer.endDate).getFullYear()})
                 </h3>
                 <p className="italic">{volunteer.position}</p>
                 {volunteer.summary && <p>{volunteer.summary}</p>}

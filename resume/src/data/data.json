@@ -30,7 +30,7 @@
   "work": [
     {
       "company": "General Assembly",
-      "position": "Software Engineering Immersive Fellow",
+      "position": ["Software Engineering Immersive Fellow"],
       "website": "https://generalassemb.ly/",
       "startDate": "2019-12-01",
       "endDate": "2020-03-31",
@@ -63,7 +63,7 @@
     },
     {
       "company": "Mercer",
-      "position": "Senior Content Marketing Manager, Principal (2017-2019)",
+      "position": ["Senior Content Marketing Manager, Principal (2017-2019)", "Field Marketing Leader, US East (2015-2017)"],
       "website": "https://www.mercer.us/",
       "startDate": "2015-12-01",
       "endDate": "2019-11-30",
@@ -78,14 +78,14 @@
     },
     {
       "company": "S&P Capital IQ",
-      "position": "Associate Director of Marketing, EMEA (2014-2015)",
+      "position": ["Associate Director of Marketing, EMEA (2014-2015)", "Senior Marketing Manager, EMEA (2011-2014)", "Marketing Manager, EMEA (2010-2011)", "Marketing Specialist (2007-2010)"],
       "website": "https://www.spglobal.com/marketintelligence/en/",
       "startDate": "2007-09-01",
       "endDate": "2015-05-31",
       "summary": "",
       "location": "London, UK",
       "highlights": [
-        "Promoted four times over eight years from Specialist through to Associate Director for exceeding business goals and demonstrating strong leadership and collaboration skills",
+        "Promoted three times over eight years from Specialist through to Associate Director for exceeding business goals and demonstrating strong leadership and collaboration skills",
         "Coached and supervised team members, managed budgets and led strategic marketing planning for key market segments",
         "Built an integrated lead management system and implemented new reporting process through Salesforce and Eloqua to improve tracking of marketing results"
       ]
