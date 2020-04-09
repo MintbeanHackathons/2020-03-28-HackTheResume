@@ -1,17 +1,16 @@
-import React from 'react';
+import React from "react";
 
-const ResumeHeader = (props) => {
+const ResumeHeader = ({ basics }) => {
+  const { name, label, summary, picture } = basics;
 
-    const { name, label, summary, picture} = props.basics
+  return (
+    <div className="resume-header">
+      {picture ? <img src={picture} alt={name} /> : null}
+      <h1>{name}</h1>
+      {label ? <h2>{label}</h2> : null}
+      {summary ? <p>{summary}</p> : null}
+    </div>
+  );
+};
 
-    return(
-        <header>
-            {picture ? <img src={picture} alt={name} /> : null}
-            <h1>{name}</h1>
-            {label ? <h2>{label}</h2> : null}
-            {summary ? <p>{summary}</p> : null}
-        </header>
-    )
-}
-
-export default ResumeHeader
+export default ResumeHeader;

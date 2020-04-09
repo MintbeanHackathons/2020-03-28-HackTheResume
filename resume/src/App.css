@@ -14,7 +14,7 @@
 
 body {
   font-family: var(--body-font);
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -23,6 +23,8 @@ h1, h2, h3, h4 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin: 0 0 1rem 0;
+  padding: 0
 }
 
 ul {
@@ -35,11 +37,27 @@ ul {
 }
 
 /* Resume Header Styles */
-header {
+.resume-header {
   text-align: center;
   background-color: var(--dark-shade-color);
   color: #ffffff;
-  padding: 1rem;
+  padding: 2.5rem 1rem;
+}
+
+.resume-header > h1 {
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+  margin-bottom: .5rem;
+}
+
+.resume-header > h2 {
+  font-size: 1.75rem;
+}
+
+.resume-header > p {
+  padding: 0 7rem;
+  line-height: 1.4rem;
+  letter-spacing: .5px;
 }
 
 /* Resume Main Section Styles */
