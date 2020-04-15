@@ -1,0 +1,209 @@
+{
+  "basics": {
+    "name": "Jennifer Gong",
+    "label": "Software Developer",
+    "picture": "",
+    "email": "jngong@gmail.com",
+    "phone": "",
+    "website": "https://jennifergong.com",
+    "summary": "Diligent and detail-oriented software developer with a strong background in digital marketing and a passion for creating engaging user experiences. As a marketer, I took pride in my ability to communicate the value of great products, but was always curious about what it took to build them. Now as a developer, I’m constantly learning new technologies that enable me to be part of this process and create direct value for customers. I strive to work in a collaborative, creative, and purpose-driven environment where I can make a positive impact.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "New York, NY",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jngong",
+        "url": "https://www.linkedin.com/in/jngong/"
+      },
+      {
+        "network": "Github",
+        "username": "jngong",
+        "url": "https://github.com/jngong"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "General Assembly",
+      "position": ["Software Engineering Immersive Fellow"],
+      "website": "https://generalassemb.ly/",
+      "startDate": "2019-12-01",
+      "endDate": "2020-03-31",
+      "summary": "",
+      "location": "New York, NY",
+      "highlights": [
+        "Gained solid knowledge of algorithms, data structures, databases, Model View Controller pattern design and object-oriented programming",
+        "Designed interactive, responsive applications with  HTML, CSS, Javascript, React and third-party API integrations",
+        "Developed full-stack applications and designed REST APIs with full CRUD functionality using React, Sequelize, Node.js, Express.js, PostgreSQL and Ruby on Rails",
+        "Managed team-based web development projects using agile workflow, Trello and Github"
+      ],
+      "projects": [
+        {
+          "title": "Travelogue",
+          "description": "Full-stack travel journal application with full CRUD functionality, user authentication and a REST JSON API, built with a React front-end and a Ruby on Rails back-end"
+        },
+        {
+          "title": "Expedia Clone",
+          "description": "Full-stack application adding feature to find eco-friendly hotels, built in collaboration with UX designers and engineers using React, Express.js, PostgreSQL and Sequelize"
+        },
+        {
+          "title": "Gender Diversity in Film",
+          "description": "Front-end web application built with React, CSS, The Movie Database API and the Bechdel Test API"
+        },
+        {
+          "title": "EntertainmentIQ",
+          "description": "Front-end game application built with HTML, CSS, vanilla Javascript and the Open Trivia Database API"
+        }
+      ]
+    },
+    {
+      "company": "Mercer",
+      "position": ["Senior Content Marketing Manager, Principal (2017-2019)", "Field Marketing Leader, US East (2015-2017)"],
+      "website": "https://www.mercer.us/",
+      "startDate": "2015-12-01",
+      "endDate": "2019-11-30",
+      "summary": "",
+      "location": "New York, NY",
+      "highlights": [
+        "Transitioned from field marketing to content marketing within two years, expanding leadership role and influence on core go-to-market business strategy",
+        "Led strategic planning and execution of key demand generation marketing campaigns for the US Career business, influenced $12m in active sales pipeline for 2018",
+        "Managed external agencies and collaborated with cross-functional partners in PR, digital marketing, and technology to execute fully integrated content-based campaigns",
+        "Led field marketing strategy and delivery of 180+ activities across 13 sub-markets over one year"
+      ]
+    },
+    {
+      "company": "S&P Capital IQ",
+      "position": ["Associate Director of Marketing, EMEA (2014-2015)", "Senior Marketing Manager, EMEA (2011-2014)", "Marketing Manager, EMEA (2010-2011)", "Marketing Specialist (2007-2010)"],
+      "website": "https://www.spglobal.com/marketintelligence/en/",
+      "startDate": "2007-09-01",
+      "endDate": "2015-05-31",
+      "summary": "",
+      "location": "London, UK",
+      "highlights": [
+        "Promoted three times over eight years from Specialist through to Associate Director for exceeding business goals and demonstrating strong leadership and collaboration skills",
+        "Coached and supervised team members, managed budgets and led strategic marketing planning for key market segments",
+        "Built an integrated lead management system and implemented new reporting process through Salesforce and Eloqua to improve tracking of marketing results"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Friends of Columbus Park",
+      "position": "Volunteer (Web Developer)",
+      "website": "https://jngong.github.io/focp-ny-website/",
+      "startDate": "2019-05-01",
+      "endDate": "Present",
+      "summary": "",
+      "location": "New York, NY",
+      "highlights": [
+        "Fully redesigned the organization's website using HTML, CSS and jQuery",
+        "Restructured site map, updated and organized primary content",
+        "Implemented Slick Carousel and Fancy Box jQuery libraries to add functionality to image rendering"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "General Assembly",
+      "area": "Software Engineering Immersive",
+      "studyType": "Certificate of Completion",
+      "startDate": "",
+      "endDate": "",
+      "gpa": "",
+      "courses": [""]
+    },
+    {
+      "institution": "General Assembly",
+      "area": "Front End Web Development",
+      "studyType": "Certificate of Completion",
+      "startDate": "",
+      "endDate": "",
+      "gpa": "",
+      "courses": [""]
+    },
+    {
+      "institution": "Institute of Direct & Digital Marketing",
+      "area": "Digital Copywriting",
+      "studyType": "Award DC",
+      "startDate": "",
+      "endDate": "",
+      "gpa": "",
+      "courses": [""]
+    },
+    {
+      "institution": "Syracuse University",
+      "area": "Magazine Journalism",
+      "studyType": "Bachelor of Science (B.S.)",
+      "startDate": "",
+      "endDate": "",
+      "gpa": "",
+      "courses": [""]
+    }
+  ],
+  "awards": [
+    {
+      "title": "President’s Circle Award for Marketer of the Year, EMEA",
+      "date": "2011",
+      "awarder": "S&P Capital IQ",
+      "summary": ""
+    },
+    {
+      "title": "President’s Circle Award for Marketer of the Year",
+      "date": "2008",
+      "awarder": "Standard & Poor's",
+      "summary": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "jQuery",
+        "React",
+        "Ruby",
+        "Ruby on Rails",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Sequelize",
+        "REST APIs",
+        "Heroku"
+      ]
+    },
+    {
+      "name": "Project Management",
+      "level": "",
+      "keywords": [
+        "Agile Methodology",
+        "Scrum Framework",
+        "Trello",
+        "Wrike",
+        "Git",
+        "Github"
+      ]
+    },
+    {
+      "name": "Digital Marketing",
+      "level": "",
+      "keywords": [
+        "Eloqua",
+        "Marketo",
+        "Salesforce.com",
+        "Adobe Experience Manager",
+        "Wordpress",
+        "SEO",
+        "Adobe Analytics",
+        "Google Analytics"
+      ]
+    }
+  ]
+}
